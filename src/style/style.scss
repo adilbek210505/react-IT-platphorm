@@ -1,0 +1,23 @@
+$bodyColor : #102146;
+$btnColor: #034078;
+$whiteColor: #FFFFFF;
+
+body{
+  background: $bodyColor;
+
+  .container{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+
+
+// import
+@import "./header/header";
+@import "home/main";
+@import "./footer/footer";
+@import "home/Aboutschool";
+@import "home/AboutUs";
+@import "home/outCourses";
+// import

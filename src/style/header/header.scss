@@ -1,0 +1,49 @@
+$bodyColor : #102146;
+$btnColor: #034078;
+$whiteColor: #FFFFFF;
+
+@mixin display {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header{
+  background: #0A1128;
+  padding: 20px 0;
+.header {
+  @include display();
+  .logo {
+    @include display();
+
+    .header-nav a{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #FFFFFF;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+  }
+  .right_site {
+    .Enter {
+      margin-left: 25px;
+      text-align: center;
+      color: $whiteColor;
+      text-decoration: none;
+      margin: 0 20px;
+    }
+
+    .header-btn {
+      width: 145px;
+      height: 35px;
+      background: $btnColor;
+      border-radius: 5px;
+      padding: 5px;
+      color: $whiteColor;
+      cursor: pointer;
+    }
+  }
+}
+}
