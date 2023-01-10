@@ -1,17 +1,35 @@
-$bodyColor : #102146;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+$bodyColor: #0A1128;
 $btnColor: #034078;
 $whiteColor: #FFFFFF;
+* {
+  padding: 0;
+  margin: 0;
+}
 
-body{
+body {
   background: $bodyColor;
+  font-family: "Montserrat", sans-serif;
 
-  .container{
-    width: 80%;
+  .container {
+    width: 90%;
     margin: 0 auto;
   }
 }
 
+a {
+  text-decoration: none;
+}
 
+input {
+  outline: none;
+  border: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
 
 // import
 @import "./header/header";
