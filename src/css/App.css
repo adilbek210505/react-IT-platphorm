@@ -1,0 +1,216 @@
+body {
+  background: #102146;
+}
+body .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#header {
+  background: #0A1128;
+  padding: 20px 0;
+}
+#header .header {
+  display: flex;
+  justify-content: space-between;
+}
+#header .header .logo {
+  display: flex;
+  justify-content: space-between;
+}
+#header .header .logo .header-nav a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-left: 20px;
+}
+#header .header .right_site .Enter {
+  margin-left: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0 20px;
+}
+#header .header .right_site .header-btn {
+  width: 145px;
+  height: 35px;
+  background: #034078;
+  border-radius: 5px;
+  padding: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+#page .pages--home {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130px;
+  color: #A5A5A5;
+}
+#page .pages--about {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+#page .all {
+  text-align: center;
+  padding: 80px;
+}
+#page .all--us {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 36px;
+}
+#page .all--text {
+  font-size: 16px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+#page .all--span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+#page .photos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#page #part .certificate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 130px;
+}
+#page #part .certificate--title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+#page #part .certificate--p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+#page #opinion .review .opinions--title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 94px;
+  color: #FFFFFF;
+  text-align: center;
+}
+#page #opinion .review .opinions .all .block {
+  width: 457px;
+  height: 272px;
+  background: #102146;
+  border-radius: 10px;
+}
+#page #opinion .review .opinions .all .block--title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+#page #opinion .review .opinions .all .block--text {
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#page .slide--title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 190px;
+  color: #FFFFFF;
+  text-align: center;
+}
+#page .slide--block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #102146;
+  width: 350px;
+  padding: 20px 30px;
+  height: 272px;
+  border: 2px solid;
+}
+#page .slide--block h1 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+#page .slide--block p {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#page .slide--block h4 {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 0 0 200px;
+  color: #FFFFFF;
+}
+#page #global .group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 230px;
+}
+#page #global .group .request--title {
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+#page #global .group .request--text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+#page #global .group .leave .inputs--surname {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B5B5B5;
+}
+#page #global .group .leave .inputs--surname__bl {
+  width: 670px;
+  height: 57px;
+  background: rgba(27, 41, 89, 0.4);
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+#page #global .group .leave .send {
+  padding-top: 40px;
+}
+#page #global .group .leave .send--btn {
+  background: #044076;
+  border-radius: 10px;
+  height: 56px;
+  width: 271px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */
