@@ -275,16 +275,6 @@
       }
     }
 
-    .slider {
-      /* the slides */
-      .slick-slide {
-        margin: 0 27px;
-      }
-
-      /* the parent */
-      .slick-list {
-        margin: 0 -27px;
-      }
       &--h {
         font-weight: 700;
         font-size: 36px;
@@ -397,6 +387,192 @@
   }
 }
 
+// 1440px 1024px 992px  768px  576px  376px 320px
+@media (max-width: 1440px) {
+  #school {
+    .container {
+      width: 90%;
+
+      .title--group {
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 992px) {
+  #school {
+    .service {
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: stretch;
+
+      &--right {
+        &__form {
+          input {
+            width: 420px;
+          }
+        }
+      }
+    }
+
+    .title--group {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  #school {
+    .container {
+      .title--group {
+        justify-content: center;
+      }
+
+      .packet--group {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #school {
+    .container {
+      .service {
+        &--right {
+          &__form {
+            input {
+              width: 500px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 378px) {
+  #school {
+    .container {
+      .school--right--image {
+        width: 90%;
+      }
+
+      .subtitle {
+        height: 2000px;
+
+        &--block {
+          height: 290px;
+          width: 70%;
+          padding: 60px 36px;
+        }
+
+      }
+
+      .school {
+        .packet {
+          &--group {
+            &--block {
+              margin: 20px 0;
+
+              &--btn {
+                button {
+                  width: 146px;
+                }
+              }
+            }
+          }
+        }
+
+        &--left {
+          h1 {
+            text-align: center;
+          }
+
+          p {
+            text-align: center;
+          }
+        }
+
+        &--right {
+          image {
+            width: 90%;
+          }
+        }
+      }
+
+      .title {
+        &--group {
+          &--block {
+            margin: 20px 0;
+            width: 290px;
+            height: 260px;
+          }
+        }
+      }
+
+      .service {
+        &--right {
+          &__form {
+            input {
+              width: 350px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 320px) {
+  #school {
+    .container {
+      .service {
+        &--right {
+          &__form input {
+            width: 277px;
+          }
+        }
+      }
+
+      .title {
+        &--group {
+          &--block {
+            margin: 20px 0;
+            width: 240px;
+            height: 331px;
+          }
+        }
+      }
+
+      .packet {
+        &--group {
+          &--block {
+            margin: 20px 0;
+            width: 224px;
+            height: 340px;
+            &--btn {
+              flex-direction: column;
+
+              button {
+                margin: 10px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//.service--right__form input {
+//  width: 277px;
+//}
 @media (max-width: 992px) {
 
 }

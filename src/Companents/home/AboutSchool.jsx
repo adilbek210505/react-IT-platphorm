@@ -31,7 +31,7 @@ const AboutSchool = () => {
                             выбором <br/> будущей специальности.</p>
                     </div>
                     <div className="school--right">
-                        <img src={benner} alt=""/>
+                        <img className="school--right--image" src={benner} alt=""/>
                     </div>
                 </div>
                 <div className="title">
@@ -177,8 +177,6 @@ const AboutSchool = () => {
                                     рекомендую и благодарю!</p>
                                 <h4>23.02.2022 г</h4>
                             </div>
-
-
 
                         </Slider>
 
