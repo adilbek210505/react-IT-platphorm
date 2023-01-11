@@ -17,7 +17,7 @@ const Header = () => {
                     </div>
                     <div className="right_site">
                         <a className="Enter" href="#">Войти</a>
-                        <button className="header-btn">Подписаться </button>
+                        <Link to={'/packet'}><button className="header-btn">Подписаться </button></Link>
                     </div>
                 </div>
             </div>
