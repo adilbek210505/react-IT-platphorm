@@ -116,13 +116,135 @@ const Main = () => {
                         <img src={what} alt=""/>
                     </div>
                     <div className="question--right">
+                        <div className="l-inner">
+                            <details className="p-section-faq__item p-faq js-faq-details">
+                                <summary className="p-faq__question js-faq-question"> Что такое зарезервированные слова
+                                    в программировании? <span className="p-faq__icon"></span>
+                                </summary>
+                                <div className="p-faq__answer js-faq-answer">
+                                    <p className="p-faq__answer-inner"> Зарезервированные или ключевые слова – это слова и
+                                        выражения, которые имеют предопределенные значения и не  могут
+                                        использоваться при написании кода для иных целей, <br/>
+                                        например, для именования переменных. Примеры <br/> распространенных ключевых
+                                        слов в языках программирования <br/>
+                                        – это конструкции if/then/else или различные варианты циклов. <br/> Вроде for и
+                                        while. </p>
+                                </div>
+                                <hr/>
+                            </details>
+                            <details className="p-section-faq__item p-faq js-faq-details">
+                                <summary className="p-faq__question js-faq-question"> Что такое зарезервированные слова
+                                    в программировании? <span className="p-faq__icon"></span>
+                                </summary>
+                                <div className="p-faq__answer js-faq-answer">
+                                    <p className="p-faq__answer-inner"> Зарезервированные или ключевые слова – это слова и
+                                        выражения, которые имеют предопределенные значения и не  могут
+                                        использоваться при написании кода для иных целей, <br/>
+                                        например, для именования переменных. Примеры <br/> распространенных ключевых
+                                        слов в языках программирования <br/>
+                                        – это конструкции if/then/else или различные варианты циклов. <br/> Вроде for и
+                                        while. </p>
+                                </div>
+                                <hr/>
+                            </details>
+                            <details className="p-section-faq__item p-faq js-faq-details">
+                                <summary className="p-faq__question js-faq-question"> Что такое зарезервированные слова
+                                    в программировании? <span className="p-faq__icon"></span>
+                                </summary>
+                                <div className="p-faq__answer js-faq-answer">
+                                    <p className="p-faq__answer-inner"> Зарезервированные или ключевые слова – это слова и
+                                        выражения, которые имеют предопределенные значения и не  могут
+                                        использоваться при написании кода для иных целей, <br/>
+                                        например, для именования переменных. Примеры <br/> распространенных ключевых
+                                        слов в языках программирования <br/>
+                                        – это конструкции if/then/else или различные варианты циклов. <br/> Вроде for и
+                                        while. </p>
+                                </div>
+                                <hr/>
+                            </details>
+                            <details className="p-section-faq__item p-faq js-faq-details">
+                                <summary className="p-faq__question js-faq-question"> Что такое зарезервированные слова
+                                    в программировании? <span className="p-faq__icon"></span>
+                                </summary>
+                                <div className="p-faq__answer js-faq-answer">
+                                    <p className="p-faq__answer-inner"> Зарезервированные или ключевые слова – это слова и
+                                        выражения, которые имеют предопределенные значения и не  могут
+                                        использоваться при написании кода для иных целей, <br/>
+                                        например, для именования переменных. Примеры <br/> распространенных ключевых
+                                        слов в языках программирования <br/>
+                                        – это конструкции if/then/else или различные варианты циклов. <br/> Вроде for и
+                                        while. </p>
+                                </div>
+                                <hr/>
+                            </details>
+                            <details className="p-section-faq__item p-faq js-faq-details">
+                                <summary className="p-faq__question js-faq-question"> Что такое зарезервированные слова
+                                    в программировании? <span className="p-faq__icon"></span>
+                                </summary>
+                                <div className="p-faq__answer js-faq-answer">
+                                    <p className="p-faq__answer-inner"> Зарезервированные или ключевые слова – это слова и
+                                        выражения, которые имеют предопределенные значения и не  могут
+                                        использоваться при написании кода для иных целей, <br/>
+                                        например, для именования переменных. Примеры <br/> распространенных ключевых
+                                        слов в языках программирования <br/>
+                                        – это конструкции if/then/else или различные варианты циклов. <br/> Вроде for и
+                                        while. </p>
+                                </div>
+                                <hr/>
+                            </details>                            <details className="p-section-faq__item p-faq js-faq-details">
+                            <summary className="p-faq__question js-faq-question"> Что такое зарезервированные слова
+                                в программировании? <span className="p-faq__icon"></span>
+                            </summary>
+                            <div className="p-faq__answer js-faq-answer">
+                                <p className="p-faq__answer-inner"> Зарезервированные или ключевые слова – это слова и
+                                    выражения, которые имеют предопределенные значения и не  могут
+                                    использоваться при написании кода для иных целей, <br/>
+                                    например, для именования переменных. Примеры <br/> распространенных ключевых
+                                    слов в языках программирования <br/>
+                                    – это конструкции if/then/else или различные варианты циклов. <br/> Вроде for и
+                                    while. </p>
+                            </div>
+                            <hr/>
+                        </details>
+                            <details className="p-section-faq__item p-faq js-faq-details">
+                                <summary className="p-faq__question js-faq-question"> Что такое зарезервированные слова
+                                    в программировании? <span className="p-faq__icon"></span>
+                                </summary>
+                                <div className="p-faq__answer js-faq-answer">
+                                    <p className="p-faq__answer-inner"> Зарезервированные или ключевые слова – это слова и
+                                        выражения, которые имеют предопределенные значения и не  могут
+                                        использоваться при написании кода для иных целей, <br/>
+                                        например, для именования переменных. Примеры <br/> распространенных ключевых
+                                        слов в языках программирования <br/>
+                                        – это конструкции if/then/else или различные варианты циклов. <br/> Вроде for и
+                                        while. </p>
+                                </div>
+                                <hr/>
+                            </details>
+                            <details className="p-section-faq__item p-faq js-faq-details">
+                                <summary className="p-faq__question js-faq-question"> Что такое зарезервированные слова
+                                    в программировании? <span className="p-faq__icon"></span>
+                                </summary>
+                                <div className="p-faq__answer js-faq-answer">
+                                    <p className="p-faq__answer-inner"> Зарезервированные или ключевые слова – это слова и
+                                        выражения, которые имеют предопределенные значения и не  могут
+                                        использоваться при написании кода для иных целей, <br/>
+                                        например, для именования переменных. Примеры <br/> распространенных ключевых
+                                        слов в языках программирования <br/>
+                                        – это конструкции if/then/else или различные варианты циклов. <br/> Вроде for и
+                                        while. </p>
+                                </div>
+                                <hr/>
+                            </details>
 
+                        </div>
                     </div>
                 </div>
                 <div className="application">
                     <div className="application--left">
                         <h1>Оставить заявку</h1>
-                        <p>Заполните краткую форму с ключевым <br/> вопросами, и мы подготовимся к разговору с <br/>вами </p>
+                        <p>Заполните краткую форму с ключевым <br/> вопросами, и мы подготовимся к разговору с <br/>вами
+                        </p>
                     </div>
                     <div className="application--right">
                         <form className="application--right--farm">

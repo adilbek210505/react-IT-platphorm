@@ -27,7 +27,7 @@
         img {
           position: absolute;
           top: 0;
-          left: 84px;
+          left: 0;
           z-index: -1;
           width: 100%;
         }
@@ -160,6 +160,10 @@
     }
 
     .question {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
       &--left {
         h1 {
           font-weight: 700;
@@ -175,7 +179,22 @@
       }
 
       &--right {
+        .l-inner {
+          details {
+            summary {
+              font-weight: 500;
+              font-size: 18px;
+              color: #FFFFFF;
+            }
+            p {
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 24px;
+              color: #FFFFFF;
 
+            }
+          }
+        }
       }
     }
 
@@ -240,6 +259,57 @@
         }
       }
     }
+    summary {
+      display: block;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    .p-section-faq__item:nth-of-type(n+2) {
+      margin-top: 32px;
+    }
+    .p-faq__question {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 16px;
+      color: white;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    .p-faq__icon {
+      display: block;
+      flex-shrink: 0;
+      position: relative;
+      width: 16px;
+      transform-origin: center;
+    }
+    .p-faq__icon::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 16px;
+      height: 16px;
+      transition: transform .3s;
+      transform: translateY(-80%) rotate(45deg);
+      border-right: 2px solid white;
+      border-bottom: 2px solid white;}
+    .is-opened .p-faq__icon::after {
+      transform: translateY(-25%) rotate(-135deg);}
+    .p-faq__answer {
+      overflow: hidden;}
+    .p-faq__answer-inner {
+      padding: 16px 32px;
+      border-top: none;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+    .l-inner {
+      margin: 0 auto;
+      max-width: 648px;
+      width: 100%;
+      padding: 24px;}
   }
 }
 
