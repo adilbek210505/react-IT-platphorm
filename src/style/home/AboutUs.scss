@@ -124,7 +124,11 @@
       padding: 20px 30px;
       height: 272px;
       border: 2px solid ;
+      img{
+        padding-left:170px;
+      }
       h1 {
+        text-align: center;
         font-weight: 600;
         font-size: 18px;
         line-height: 22px;
@@ -144,6 +148,7 @@
         margin: 0 0 0 200px;
         color: #FFFFFF;
       }
+
     }
   }
   #global {
@@ -152,6 +157,7 @@
       justify-content: space-between;
       align-items: flex-start;
       padding-top: 230px;
+      margin-bottom: 113px;
       &--request {
         padding: 32px 0;
         &__title {
@@ -214,6 +220,14 @@
   .container{
     width: 90%;
   }
+  #page{
+
+  }
+   #global{
+     .group{
+       margin-bottom: 132px;
+     }
+   }
 }
  @media (max-width: 1200px) {
 
@@ -234,38 +248,58 @@
  @media (max-width: 1024px) {
    #global{
       .group{
+        margin-top: -67px;
         &--request{
-          font-size: 30px;
-          color: #FFFFFF;
-          padding: 0;
+          margin: -16px 36px;
+          &__text{
+          }
         }
         &--leave{
           &__inputs {
             &--bl {
-              width: 430px;
-              height: 57px;
-              padding: 0 0;
+                width: 574px;
             }
             }
-
+           &--send{
+           }
           }
 
         }
       }
-
    }
 
 
  @media (max-width: 992px) {
-   #page #global .group--leave__inputs--bl {
-     width: 488px;
-     height: 48px;
-     padding: 0 0;
+   #global{
+     .group{
+       flex-wrap: wrap;
+       padding-top: 85px;
+       &--request {
+         padding: 6px 40px;
+         &__title{
+         }
+       }
+       &--leave{
+         padding: 0 16px;
+         &__inputs{
+           &--bl{
+             width: 442px;
+           }
+         }
+       }
+       &--send{
+         &__btn{
+           height: 41px;
+           width: 171px;
+         }
+       }
+     }
    }
  }
 @media (max-width:769px) {
 #global{
   .group{
+    padding-top: 106px;
     &--request {
       padding: 26px 27px;
       &__title{
@@ -284,12 +318,11 @@
     }
   }
 }
-  #part{
-    .certificate{
-      padding: 94px;
-    }
+  #page #part .certificate {
+    padding: 114px;
   }
 }
+
 @media (max-width: 576px) {
   #page{
    .pages{
@@ -298,35 +331,24 @@
      }
    }
     .all{
-      padding: 130px 0;
+      padding: 130px 0 10px;
     }
 
   }
  #part{
    .certificate{
-     padding:7px;
+     padding: 93px 1px;
      &--title{
      }
+    &--p{
+      width: 477px;
+    }
      &--cer{
        width: 90%;
      }
    }
 
  }
-  #global {
-    .group{
-      flex-wrap: wrap;
-      padding-top: 85px;
-
-      &--request{
-        padding: 19px 54px;
-      }
-      &--leave{
-          padding: 0 16px;
-
-      }
-    }
-  }
 .slide{
   &--title{
     font-size: 29px;
@@ -345,12 +367,20 @@
 }
 #global{
   .group{
+    flex-wrap: wrap;
+    padding-top: 85px;
     &--request {
       padding: 6px 40px;
       &__title{
       }
     }
     &--leave{
+      padding: 0 16px;
+      &__inputs{
+        &--bl{
+          width: 464px;
+        }
+      }
     }
     &--send{
       &__btn{
@@ -360,20 +390,23 @@
     }
   }
 }
+  #page #global .group--leave__inputs--bl {
+    width: 464px;
+    height: 48px;
+  }
 }
 @media (max-width: 376px) {
 #part{
   .certificate{
-    &--cer{
-      display: none;
+    &--p{
+      width: 311px;
+      text-align: center;
     }
   }
 }
-}
+
+
 #page .all--text {
-  font-size: 16px;
-  /* line-height: 25px; */
-  color: #FFFFFF;
   padding: 34px 0;
 }
 #page #global .group--leave__inputs--bl {
@@ -383,6 +416,7 @@
 
 #global{
   .group{
+    padding-top: 136px;
     &--send{
       &__btn {
         height: 33px;
@@ -392,13 +426,29 @@
     }
   }
 }
-
+}
 
 @media (max-width: 320px) {
-  #global {
-   .group{
-     padding-top: 58px;
-   }
+  .slide{
+    &--title {
+      font-size: 20px;
+    }
+  }
+  #page #global .group--leave__inputs--bl {
+    width: 290px;
+    height: 48px;
+  }
+}
+#global{
+  .group{
+    padding-top: 131px;
+    margin-bottom: 94px;
+  }
+  #part{
+    .certificate{
+      font-size: 28px;
+
+    }
   }
 }
 
