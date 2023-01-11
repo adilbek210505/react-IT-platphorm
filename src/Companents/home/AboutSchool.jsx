@@ -14,7 +14,34 @@ const AboutSchool = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
 
     return (
@@ -31,7 +58,7 @@ const AboutSchool = () => {
                             выбором <br/> будущей специальности.</p>
                     </div>
                     <div className="school--right">
-                        <img src={benner} alt=""/>
+                        <img className="school--right--image" src={benner} alt=""/>
                     </div>
                 </div>
                 <div className="title">
@@ -177,8 +204,6 @@ const AboutSchool = () => {
                                     рекомендую и благодарю!</p>
                                 <h4>23.02.2022 г</h4>
                             </div>
-
-
 
                         </Slider>
 
