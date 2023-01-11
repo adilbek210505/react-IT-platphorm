@@ -4,9 +4,8 @@ import {FiYoutube} from "react-icons/fi";
 import {BsInstagram, BsTelephone} from "react-icons/bs";
 import {CiFacebook, CiLocationOn} from "react-icons/ci";
 import {RxTwitterLogo} from "react-icons/rx";
-import {GrTictok} from "react-icons/gr";
-import {TbBrandTelegram} from "react-icons/tb";
 import {AiOutlineMail} from "react-icons/ai";
+import {SiTiktok} from "react-icons/si";
 
 const Footer = () => {
     return (
@@ -39,10 +38,10 @@ const Footer = () => {
                                 <RxTwitterLogo/>
                             </a>
                             <a href="#">
-                                <GrTictok/>
+                                <SiTiktok/>
                             </a>
                             <a href="#">
-                                <TbBrandTelegram/>
+                                {/*<TbBrandTelegram/>*/}
                             </a>
                         </div>
 
