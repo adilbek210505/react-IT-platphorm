@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #0A1128;
+  font-family: "Montserrat", sans-serif;
+}
+body .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+#header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  backdrop-filter: blur(40px);
+  padding: 20px 0;
+}
+#header .header {
+  display: flex;
+  justify-content: space-between;
+}
+#header .header .logo {
+  display: flex;
+  justify-content: space-between;
+}
+#header .header .logo .header-nav a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-left: 20px;
+}
+#header .header .right_site .Enter {
+  margin-left: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0 20px;
+}
+#header .header .right_site .header-btn {
+  width: 145px;
+  height: 35px;
+  background: #034078;
+  border-radius: 5px;
+  padding: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+#footer .container .footer {
+  padding: 50px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#footer .container .footer--logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#footer .container .footer--logo h1 {
+  border: 2px solid #fff;
+  margin: 10px 0;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+#footer .container .footer--link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#footer .container .footer--link h1 {
+  font-weight: 500;
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#footer .container .footer--link a {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#footer .container .footer--Social-network h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 0 0 20px 0;
+}
+#footer .container .footer--Social-network--link {
+  width: 212px;
+}
+#footer .container .footer--Social-network--link a {
+  color: #fff;
+  font-size: 30px;
+  margin: 20px;
+}
+#footer .container .footer--Contacts {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#footer .container .footer--Contacts h1 {
+  margin: 0 0 10px 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+#footer .container .footer--Contacts a {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#footer .container .footer--address h1 {
+  margin: 0 0 10px 0;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#footer .container .footer--address p {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#school {
+  padding: 100px 0 0 0;
+}
+#school .container .school {
+  padding: 40px 0 100px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#school .container .school .p-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #A5A5A5;
+}
+#school .container .school--left h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+#school .container .school--left p {
+  font-weight: 400;
+  padding: 20px 0;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+#school .container .title {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#school .container .title .title--h {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 35px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px 0;
+}
+#school .container .title--group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#school .container .title--group a {
+  text-decoration: none;
+}
+#school .container .title--group--block {
+  margin: 20px;
+  list-style: none;
+  width: 350px;
+  height: 233px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+#school .container .title--group--block h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+#school .container .title--group--block p {
+  padding: 20px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+#school .container .title--group--block--icon a {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+#school .container .title .all {
+  background: #043C71;
+  backdrop-filter: blur(7.5px);
+  height: 51px;
+  width: 209px;
+  border: none;
+  border-radius: 5px;
+  margin: 30px 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+#school .container .subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 900px;
+}
+#school .container .subtitle .subtitle-h {
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+#school .container .subtitle--block {
+  height: 100px;
+  padding: 60px 60px;
+  width: 80%;
+  background: #FFFFFF;
+  box-shadow: -5px -3px 10px rgba(16, 23, 47, 0.45), 9px 9px 9px rgba(10, 15, 33, 0.45);
+  border-radius: 10px;
+}
+#school .container .subtitle--block h2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #043F75;
+}
+#school .container .subtitle--block p {
+  padding: 23px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+#school .container .subtitle button {
+  background: #043C71;
+  backdrop-filter: blur(7.5px);
+  border-radius: 5px;
+  height: 51px;
+  width: 209px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#school .container .packet {
+  padding: 100px 0;
+}
+#school .container .packet h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+  text-align: center;
+}
+#school .container .packet h3 {
+  padding: 30px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#school .container .packet--group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#school .container .packet--group--block {
+  width: 346px;
+  padding: 10px 20px;
+  height: 300px;
+  background: #0A1128;
+  box-shadow: 6px 6px 14px -117px #132049, -4px -3px 24px #040B23;
+  border-radius: 10px;
+}
+#school .container .packet--group--block h2 {
+  padding: 10px 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+#school .container .packet--group--block p {
+  font-weight: 400;
+  padding: 10px 0;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+#school .container .packet--group--block h4 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+#school .container .packet--group--block h6 {
+  padding: 20px 0;
+  font-weight: 400;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+#school .container .packet--group--block--btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#school .container .packet--group--block--btn button {
+  width: 150px;
+  height: 36px;
+  border: none;
+  border-radius: 3.27273px;
+  background: #044076;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#school .container .packet--group--block--btn button:hover {
+  background: transparent;
+  border: 2px solid #044076;
+}
+#school .container .slider {
+  /* the slides */
+  /* the parent */
+}
+#school .container .slider .slick-slide {
+  margin: 0 27px;
+}
+#school .container .slider .slick-list {
+  margin: 0 -27px;
+}
+#school .container .slider--h {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 80px 0;
+}
+#school .container .slider .slider--block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #102146;
+  padding: 20px 30px;
+  border: 20px solid #0A1128;
+}
+#school .container .slider .slider--block img {
+  margin: -55px 0 0 40%;
+}
+#school .container .slider .slider--block h1 {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+#school .container .slider .slider--block p {
+  padding: 20px 20px 10px 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#school .container .slider .slider--block h4 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+  float: right;
+  padding: 0 20px;
+}
+#school .container .service {
+  padding: 100px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#school .container .service--left h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 0 0 20px 0;
+}
+#school .container .service--left p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+#school .container .service--right__form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#school .container .service--right__form h1 {
+  font-weight: 400;
+  font-size: 16px;
+  color: #B5B5B5;
+  padding: 10px 0 5px 0;
+}
+#school .container .service--right__form input {
+  width: 670px;
+  height: 57px;
+  background: rgba(27, 41, 89, 0.4);
+  font-size: 20px;
+  padding-left: 10px;
+  border-radius: 10px;
+  color: white;
+}
+#school .container .service--right__form button {
+  width: 271px;
+  height: 56px;
+  background: #044076;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=App.css.map */
