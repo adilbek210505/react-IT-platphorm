@@ -5,6 +5,7 @@ import Main from "./Companents/home/Main";
 import AboutSchool from "./Companents/home/AboutSchool";
 import AboutUs from "./Companents/home/AboutUs";
 import OurCourses from "./Companents/home/OurCourses";
+import Enter from "./style/home/Enter";
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
             <Route path={'/aboutSchool'} element={<AboutSchool/>}/>
             <Route path={'/ourCourses'} element={<OurCourses/>}/>
             <Route path={'/AboutUs'} element={<AboutUs/>}/>
+            <Route path={'/enter'} element={<Enter/>}/>
         </Routes>
+
     </div>
   );
 }
