@@ -1,6 +1,8 @@
 import React from 'react';
 import talk from '../image/aboutus.talk.png'
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 // Import Swiper styles
 
 import presentation from '../image/aboutus.presentation.png'
@@ -10,6 +12,40 @@ import alina from '../image/aboutus.alina.svg'
 import erlan from '../image/aboutus.erlan.svg'
 
 const AboutUs = () => {
+    var settings = {
+        dots: true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
     return (
         <div id="page">
             <div className="container">
@@ -34,12 +70,12 @@ const AboutUs = () => {
                     <div className='certificate'>
                         <h1 className='certificate--title'>Сертификат</h1>
                         <p className='certificate--p'>По окончании обучения выдается онлайн сертификат.</p>
-                        <img src={certificate} alt=""/>
+                        <img src={certificate} alt="" className='certificate--cer'/>
                     </div>
                 </div>
                 <div className="slide">
                     <h1 className='slide--title'>Отзывы наших студентов</h1>
-
+                    <Slider {...settings}>
                             <div className="slide--block">
                                 <img src={victor} alt=""/>
                                 <h1>Виктор Александарович</h1>
@@ -70,32 +106,33 @@ const AboutUs = () => {
                                 <p>Спасибо за обучение, все было правильно организовано и продумано. Дистанционное обучения это очень хорошо, потому что мы живем не в Ростове. Для нас это отлично. Второй этап обучение ребенку понравился больше, очень емко и содержательно.</p>
                                 <h4>23.02.2022 г</h4>
                             </div>
-
+                        </Slider>
                 </div>
                 <div id='global'>
                     <div className='group'>
-                        <div className='request'>
-                            <h1 className='request--title'>Оставить заявку</h1>
-                            <p className='request--text'>Заполните краткую форму с ключевым <br/> вопросами, и мы
-                                подготовимся к разговору с <br/> вами </p>
+                        <div className='group--request'>
+                            <h1 className='group--request__title'>Оставить заявку</h1>
+                            <p className='group--request__text'>Заполните краткую форму с ключевым <br/> вопросами, и мы
+                                подготовимся к разговору <br/> с  вами </p>
                         </div>
                         <form>
-                        <div className='leave'>
-                            <div className='inputs'>
-                                <h3 className="inputs--surname">ФИО *</h3>
-                                <input className="inputs--surname__bl" type="text"/>
+                        <div className='group--leave'>
+                            <div className='group--leave__inputs'>
+                                <h3 className="group--leave__inputs--surname">ФИО *</h3>
+                                <input className="group--leave__inputs--bl" type="text"/>
+                            </div>
+                            <div className='group--leave__inputs'>
+                                <h3 className="group--leave__inputs--surname">Номер телефон*</h3>
+                                <input className="group--leave__inputs--bl" type="text"/>
+                            </div>
+                            <div className='group--leave__inputs'>
+                                <h3 className="group--leave__inputs--surname">Email*</h3>
+                                <input className="group--leave__inputs--bl" type="text"/>
                             </div>
 
-                            <div className='inputs'>
-                                <h3 className="inputs--surname">Номер телефон*</h3>
-                                <input className="inputs--surname__bl" type="text"/>
-                            </div>
-                            <div className='inputs'>
-                                <h3 className="inputs--surname">Номер телефон*</h3>
-                                <input className="inputs--surname__bl" type="text"/>
-                            </div>
-                           <div className='send'>
-                               <button className='send--btn'>Отправить</button>
+
+                           <div className='group--send'>
+                               <button className='group--send__btn'>Отправить</button>
                            </div>
                         </div>
                         </form>
