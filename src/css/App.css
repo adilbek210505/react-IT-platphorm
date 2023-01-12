@@ -200,17 +200,20 @@ button {
   background: transparent;
   margin: 10px 0;
 }
+
 #Mein .container .question {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
+
 #Mein .container .question--left h1 {
   font-weight: 700;
   font-size: 48px;
   color: #FFFFFF;
   padding: 20px 0;
 }
+
 #Mein .container .question--right .l-inner details summary {
   font-weight: 500;
   font-size: 18px;
@@ -223,6 +226,7 @@ button {
   line-height: 24px;
   color: #FFFFFF;
 }
+
 #Mein .container .application {
   padding: 100px 0;
   display: flex;
@@ -274,6 +278,7 @@ button {
   color: white;
   margin: 20px 0;
 }
+
 #Mein summary {
   display: block;
 }
@@ -329,6 +334,7 @@ button {
   width: 100%;
   padding: 24px;
 }
+
 
 @media (max-width: 1440px) {
   #Mein .container {
@@ -529,6 +535,7 @@ button {
     width: 200px;
   }
 }
+
 #Profil .container .profil--left--block {
   height: 527px;
   width: 354px;
@@ -1276,6 +1283,7 @@ button {
     width: 290px;
     height: 48px;
   }
+
   #global .group {
     padding-top: 131px;
     margin-bottom: 94px;
@@ -4336,6 +4344,15 @@ button {
     width: 100%;
     padding: 24px;
   }
+
+}
+#global .group {
+  padding-top: 131px;
+  margin-bottom: 94px;
+}
+#global #part .certificate {
+  font-size: 28px;
+
 }
 
 /*# sourceMappingURL=App.css.map */

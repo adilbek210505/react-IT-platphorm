@@ -7,6 +7,7 @@ import AboutUs from "./Companents/home/AboutUs";
 import OurCourses from "./Companents/home/OurCourses";
 
 import Packet from "./Companents/home/Packet";
+
 import Header from "./Companents/header/Header";
 import Footer from "./Companents/footer/Footer";
 
@@ -22,6 +23,37 @@ function App() {
                 <Route path={'/packet'} element={<Packet/>}/>
             </Routes>
             <Footer/>
+
+
+function App() {
+  return (
+    <div className="App">
+        <Routes>
+            <Route path={"/"} element={<Main/>}/>
+            <Route path={'/aboutSchool'} element={<AboutSchool/>}/>
+            <Route path={'/ourCourses'} element={<OurCourses/>}/>
+            <Route path={'/AboutUs'} element={<AboutUs/>}/>
+            <Route path={'/packet'} element={<Packet/>}/>
+        </Routes>
+    </div>
+  );
+
+import Layout from "./Companents/Layout/Layout";
+import React from "react";
+
+function App() {
+    return (
+        <div className="App">
+        
+            <Layout>
+                <Routes>
+                    <Route path={"/"} element={<Main/>}/>
+                    <Route path={'/aboutSchool'} element={<AboutSchool/>}/>
+                    <Route path={'/ourCourses'} element={<OurCourses/>}/>
+                    <Route path={'/AboutUs'} element={<AboutUs/>}/>
+                </Routes>
+            </Layout>
+
         </div>
     );
 
