@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import logo from "../image/logo.svg"
 
 const Header = () => {
@@ -13,6 +13,7 @@ const Header = () => {
                             <Link className="/link" to="/aboutSchool">О школе</Link>
                             <Link className="/link" to="/ourCourses">Наши курсы</Link>
                             <Link className="/link" to="/AboutUs"> О нас</Link>
+                            <Link className="/link" to="/Profile">profil</Link>
                         </div>
                     </div>
                     <div className="right_site">

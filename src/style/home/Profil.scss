@@ -1,14 +1,96 @@
 #Profil {
+  padding: 100px 0 0 0;
+
   .container {
     .profil {
       &--left {
         &--block {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: space-evenly;
           height: 527px;
           width: 354px;
           border-radius: 10px;
           background: #FFFFFF;
+
+          button {
+            height: 39px;
+            width: 170px;
+            border-radius: 10px;
+            background: #0272CE;
+            font-weight: 500;
+            font-size: 16px;
+            color: #FFFFFF;
+          }
+
+          &--menu {
+            &--personal {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              height: 50px;
+
+              h1 {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                color: #000;
+                padding: 0 0 0 10px;
+              }
+
+              .icons {
+                font-size: 25px;
+              }
+            }
+          }
         }
       }
     }
   }
+}
+
+// 1440px 1024px 992px  768px  576px  376px 320px
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+  #Profil {
+    .container {
+      .profil {
+        &--left {
+          &--block {
+            img {
+              display: block;
+            }
+            button {
+              display: block;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  #Profil {
+    .container {
+      .profil {
+        &--left {
+          &--block {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
 }
