@@ -2,10 +2,7 @@ import React, {useState} from 'react';
 import {Link, NavLink} from "react-router-dom";
 import logo from "../image/logo.svg"
 import {FaBars, FaTimes} from "react-icons/fa";
-
-
 const Header = () => {
-
     const [headerIcon, setHeaderIcon] = useState(false)
 
     return (
@@ -23,6 +20,8 @@ const Header = () => {
                     <div className="right_site">
                        <Link to={'/enter'}> <p className='Enter'>Войти</p></Link>
                         <button className="header-btn">Подписаться </button>
+                        <a className="Enter" href="#">Войти</a>
+                        <Link to={'/packet'}><button className="header-btn">Подписаться </button></Link>
                     </div>
                     <div onClick={()=>{setHeaderIcon(!headerIcon)}} className="header--mobile_menu_icon" style={{color : "white", fontSize: '30px'}}>
                         {headerIcon ? <FaTimes/>:<FaBars/>}

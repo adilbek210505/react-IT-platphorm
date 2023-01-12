@@ -5,8 +5,25 @@ import Main from "./Companents/home/Main";
 import AboutSchool from "./Companents/home/AboutSchool";
 import AboutUs from "./Companents/home/AboutUs";
 import OurCourses from "./Companents/home/OurCourses";
-<<<<<<< HEAD
+import Layout from "./Companents/Layout/Layout";
+import React from "react";
 import Enter from "./style/home/Enter";
+import Packet from "./Companents/home/Packet";
+import Header from "./Companents/header/Header";
+import Footer from "./Companents/footer/Footer";
+function App() {
+    return (
+        <div className="App">
+            <Header/>
+            <Routes>
+                <Route path={"/"} element={<Main/>}/>
+                <Route path={'/aboutSchool'} element={<AboutSchool/>}/>
+                <Route path={'/ourCourses'} element={<OurCourses/>}/>
+                <Route path={'/AboutUs'} element={<AboutUs/>}/>
+                <Route path={'/packet'} element={<Packet/>}/>
+            </Routes>
+            <Footer/>
+
 
 function App() {
   return (
@@ -21,13 +38,17 @@ function App() {
 
     </div>
   );
-=======
-import Layout from "./Companents/Layout/Layout";
-import React from "react";
+            <Route path={'/packet'} element={<Packet/>}/>
+        </Routes>
+    </div>
+  );
+
+
 
 function App() {
     return (
         <div className="App">
+        
             <Layout>
                 <Routes>
                     <Route path={"/"} element={<Main/>}/>
@@ -36,9 +57,9 @@ function App() {
                     <Route path={'/AboutUs'} element={<AboutUs/>}/>
                 </Routes>
             </Layout>
+
         </div>
     );
->>>>>>> 1a1c2689aa89497d46a97bf710505437af39633d
 }
+export default App
 
-export default App;
