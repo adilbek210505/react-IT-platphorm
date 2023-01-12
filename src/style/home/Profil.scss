@@ -1,0 +1,14 @@
+#Profil {
+  .container {
+    .profil {
+      &--left {
+        &--block {
+          height: 527px;
+          width: 354px;
+          border-radius: 10px;
+          background: #FFFFFF;
+        }
+      }
+    }
+  }
+}
