@@ -1,0 +1,109 @@
+#Comment {
+  .container {
+    .comment {
+      padding: 100px 0 0 0;
+
+      h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        color: #FFFFFF;
+      }
+
+      &--input {
+        display: flex;
+
+        &--left {
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #A4A4A4;
+          }
+
+          input {
+            font-weight: 400;
+            font-size: 14px;
+            color: #FFFFFF;
+            width: 314px;
+            height: 44px;
+            background: rgba(27, 41, 89, 0.4);
+            padding-left: 10px;
+            border-radius: 10px;
+          }
+
+          &--block {
+            display: flex;
+            align-items: center;
+
+            button {
+              margin: 0 10px;
+              width: 150px;
+              height: 44px;
+              background: rgba(27, 41, 89, 0.4);
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #A4A4A4;
+
+              input {
+                margin: 0 10px;
+                width: 14px;
+                height: 44px;
+              }
+            }
+          }
+        }
+
+        &--right {
+          &--sel {
+            p {
+              font-weight: 400;
+              font-size: 14px;
+              color: #A4A4A4;
+            }
+
+            select {
+              padding: 10px;
+              background: rgba(27, 41, 89, 0.4);
+              border-radius: 10px;
+              color: #A4A4A4;
+              option {
+                p {
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: #FFFFFF;
+                }
+              }
+            }
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            color: #A4A4A4;
+            padding: 10px 0;
+          }
+
+          &--option {
+            select {
+              width: 308px;
+              height: 44px;
+              background: rgba(27, 41, 89, 0.4);
+              color: #A4A4A4;
+              border-radius: 10px;
+              option {
+                p {
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: #FFFFFF;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

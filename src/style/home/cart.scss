@@ -1,0 +1,141 @@
+#Cart {
+  .container {
+    .cart {
+      padding: 100px 0 0 0;
+
+      h1 {
+        font-weight: 700;
+        font-size: 36px;
+        color: #FFFFFF;
+      }
+
+      &--block {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &--left {
+          width: 355px;
+          height: 225px;
+          background: rgba(10, 17, 40, 0.1);
+          border: 1px solid #0272CE;
+          backdrop-filter: blur(7px);
+          border-radius: 10px;
+          padding: 20px;
+          margin: 50px;
+
+          h2 {
+            font-weight: 700;
+            font-size: 24px;
+            color: #FFFFFF;
+          }
+
+          p {
+            font-weight: 700;
+            font-size: 24px;
+            color: #FFFFFF;
+            padding: 50px 0 0 0;
+          }
+
+          h6 {
+            font-weight: 400;
+            font-size: 16px;
+            color: #FFFFFF;
+          }
+
+          &--visa {
+            display: flex;
+            align-items: center;
+
+            img {
+              padding: 10px 10px;
+            }
+          }
+
+          &--image {
+            float: right;
+          }
+        }
+      }
+
+      &--box {
+        width: 770px;
+        height: 373px;
+        background: rgba(10, 17, 40, 0.1);
+        border: 1px solid #0272CE;
+        backdrop-filter: blur(7px);
+        border-radius: 10px;
+        padding: 20px;
+
+        h1 {
+          font-weight: 500;
+          font-size: 36px;
+          color: #FFFFFF;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          padding: 20px 0 0 0;
+          color: #FFFFFF;
+        }
+
+        button {
+          font-weight: 400;
+          font-size: 16px;
+          color: #FFFFFF;
+          width: 180px;
+          height: 40px;
+          background: #0272CE;
+          border-radius: 10px;
+          margin: 200px 0 10px 0;
+        }
+
+        h3 {
+          font-weight: 400;
+          font-size: 16px;
+          color: #FFFFFF;
+        }
+      }
+
+    }
+  }
+}
+
+// 1440px 1024px 992px  768px  576px  376px 320px
+@media (max-width: 576px) {
+  #Cart {
+    .container {
+      .cart {
+        &--box {
+          width: 80%;
+          height: 438px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #Cart {
+    .container {
+      .cart {
+        &--box {
+          height: 600px;
+        }
+        &--block {
+          &--left {
+            height: 180px;
+            p {
+              font-size: 13px;
+            }
+            h2 {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

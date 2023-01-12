@@ -1,3 +1,4 @@
+import React from 'react';
 import React, {useState} from 'react';
 import {Link, NavLink} from "react-router-dom";
 import logo from "../image/logo.svg"
@@ -10,6 +11,13 @@ const Header = () => {
             <div className="container">
                 <div  className="header" >
                     <div className="logo">
+                        <Link to={'/'}><img src={logo} alt="" /></Link>
+                        <div className="header-nav">
+                            <Link className="/link" to="/aboutSchool">О школе</Link>
+                            <Link className="/link" to="/ourCourses">Наши курсы</Link>
+                            <Link className="/link" to="/AboutUs"> О нас</Link>
+                            <Link className="/link" to="/Profile">profil</Link>
+                        </div>
                         <Link to={'/'}><img src={logo} className='header_logo' alt="" /></Link>
                         <nav  className='header-nav'>
                             <NavLink className="link" to="/aboutSchool">О школе</NavLink>
