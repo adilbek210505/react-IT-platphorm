@@ -46,16 +46,16 @@ const Footer = () => {
                         </div>
 
                     </div>
-                    <div className="footer--Contacts">
-                        <h1>Контакты</h1>
-                        <a href="#"><AiOutlineMail/> @motionwebteam@gmail.com</a>
-                        <a href="#"><BsTelephone/>+996 559 - 69 - 26 - 26</a>
-                    </div>
-                    <div className="footer--address">
-                        <h1>Адреса</h1>
-                        <p><CiLocationOn/>Турусбекова 109 / 3</p>
-                        <p>Идентификационный код: 1234567890</p>
-                    </div>
+                    {/*<div className="footer--Contacts">*/}
+                    {/*    <h1>Контакты</h1>*/}
+                    {/*    <a href="#"><AiOutlineMail/> @motionwebteam@gmail.com</a>*/}
+                    {/*    <a href="#"><BsTelephone/>+996 559 - 69 - 26 - 26</a>*/}
+                    {/*</div>*/}
+                    {/*<div className="footer--address">*/}
+                    {/*    <h1>Адреса</h1>*/}
+                    {/*    <p><CiLocationOn/>Турусбекова 109 / 3</p>*/}
+                    {/*    <p>Идентификационный код: 1234567890</p>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </div>

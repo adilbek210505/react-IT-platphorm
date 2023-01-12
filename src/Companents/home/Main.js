@@ -6,6 +6,9 @@ import what from "../image/main--photo--what.png"
 
 const Main = () => {
     return (
+<<<<<<< HEAD
+        <></>
+=======
         <section id="Mein">
             <div className="container">
                 <div className="main">
@@ -276,6 +279,7 @@ const Main = () => {
                 </div>
             </div>
         </section>
+>>>>>>> 1a1c2689aa89497d46a97bf710505437af39633d
     );
 };
 
