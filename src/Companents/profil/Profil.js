@@ -7,6 +7,7 @@ import {FaRegComment} from "react-icons/fa";
 import {BiExit} from "react-icons/bi";
 import {Link, Route, Routes} from "react-router-dom";
 
+import {IoPeopleSharp} from "react-icons/io";
 const Profil = () => {
     return (
         <section id="Profil">
@@ -51,6 +52,11 @@ const Profil = () => {
                                     <h1>Выйти</h1>
                                 </div>
                                 <hr/>
+                                <div className="profil--left--block--menu--personal">
+                                    <IoPeopleSharp/>
+                                    <h1>Личные данные</h1>
+                                </div>
+
                             </div>
                         </div>
                     </div>

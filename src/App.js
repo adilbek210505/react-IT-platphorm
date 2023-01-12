@@ -14,6 +14,27 @@ import Subscriptions from "./Companents/profil/subscriptions/Subscriptions";
 import Purchases from "./Companents/profil/purchases/Purchases";
 import Comment from "./Companents/profil/comment/Comment";
 import Notice from "./Companents/profil/notice/Notice";
+import Enter from "./style/home/Enter";
+import Packet from "./Companents/home/Packet";
+import Header from "./Companents/header/Header";
+import Footer from "./Companents/footer/Footer";
+function App() {
+  return (
+    <div className="App">
+        <Routes>
+            <Route path={"/"} element={<Main/>}/>
+            <Route path={'/aboutSchool'} element={<AboutSchool/>}/>
+            <Route path={'/ourCourses'} element={<OurCourses/>}/>
+            <Route path={'/AboutUs'} element={<AboutUs/>}/>
+            <Route path={'/enter'} element={<Enter/>}/>
+            <Route path={'/packet'} element={<Packet/>}/>
+            
+        </Routes>
+    </div>
+  );
+
+
+
 function App() {
     return (
         <div className="App">
@@ -26,8 +47,10 @@ function App() {
                     <Route path={"/profile"} element={<Profil/>} />
                 </Routes>
             </Layout>
+                </Routes>
+            </Layout>
         </div>
     );
 }
+export default App
 
-export default App;
