@@ -33,6 +33,7 @@ const AboutSchool = () => {
                     slidesToScroll: 2,
                     initialSlide: 2
                 }
+
             },
             {
                 breakpoint: 480,
