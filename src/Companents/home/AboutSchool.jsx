@@ -7,6 +7,7 @@ import slideri from "../image/AboutSchool-slider-three--img.svg"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {NavLink} from "react-router-dom";
 const AboutSchool = () => {
 
     const settings = {
@@ -47,7 +48,7 @@ const AboutSchool = () => {
     return (
         <section id="school">
             <div className="container">
-                <p className="p-text"> Главная /<span> О школе</span></p>
+                <p className="p-text" style={{color: 'white'}}> <NavLink to={'/'}><span style={{color: "white"}}>Главная</span></NavLink> / <NavLink to={'/aboutSchool'}><span style={{color: 'white'}}> О школе</span></NavLink></p>
                 <div className="school">
                     <div className="school--left">
                         <h1>О нашей школе:</h1>

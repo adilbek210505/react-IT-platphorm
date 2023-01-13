@@ -48,5 +48,74 @@ $whiteColor: #FFFFFF;
       cursor: pointer;
     }
   }
+      .header--mobile_menu_icon{
+        display: none;
+  }
 }
 }
+
+
+@media (max-width: 768px) {
+  #header {
+    .header {
+      text-align: center;
+      .logo {
+        display: none;
+
+        .header-nav a {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          text-align: center;
+          color: #FFFFFF;
+          text-decoration: none;
+          margin-left: 20px;
+        }
+
+      }
+      .right_site {
+        display: none;
+        .Enter {
+         color: #FFFFFF;
+          font-size: 20px;
+        }
+
+        .header-btn {
+          //display: none;
+        }
+      }
+      .header--mobile_menu_icon {
+        display: block;
+      }
+      .nav-link-mobile{
+        //position: absolute;
+        display: block;
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin-left: 20px;
+
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
