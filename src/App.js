@@ -9,6 +9,13 @@ import React from "react";
 import Profil from "./Companents/profil/Profil";
 import Packet from "./Companents/home/Packet";
 import Follow from "./Companents/follow/Follow";
+import AllArticle from "./Companents/article/AllArticle/AllArticle";
+import DetailArticle from "./Companents/article/detailArticle/DetailArticle";
+import AllMasterClasses from "./Companents/masterClasses/allMasterClasses/AllMasterClasses";
+import DetailMasterClasses from "./Companents/masterClasses/detailMasterClasses/DetailMasterClasses";
+import AllCourses from "./Companents/courses/AllCourses/AllCourses";
+import DetailCoureses from "./Companents/courses/detailCourses/detailCoureses";
+import Courses from "./Companents/courses/Courses/Courses";
 
 
 function App() {
@@ -23,6 +30,13 @@ function App() {
                     <Route path={'/packet'} element={<Packet/>}/>
                     <Route path={'/follow'} element={<Follow/>}/>
                     <Route path={"/profile"} element={<Profil/>} />
+                    <Route path={'/allArticle'} element={<AllArticle/>}/>
+                    <Route path={'/detailArticle'} element={<DetailArticle/>}/>
+                    <Route path={'/allMasterClasses'} element={<AllMasterClasses/>}/>
+                    <Route path={'/detailMasterClasses'} element={<DetailMasterClasses/>}/>
+                    <Route path={'/allCourses'} element={<AllCourses/>}/>
+                    <Route path={'/detailCourses'} element={<DetailCoureses/>}/>
+                    <Route path={'/courses'} element={<Courses/>}/>
                 </Routes>
 
             </div>

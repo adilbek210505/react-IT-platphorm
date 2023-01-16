@@ -67,68 +67,62 @@ const AboutSchool = () => {
                     <h1 className="title--h">Курсы</h1>
                     <div className="title--group">
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a href="#">
-                            <div className="title--group--block">
-                                <h1>Frontend-разработчик</h1>
-                                <p>Мастер создания сайтов. Умеет делать их красивыми, интерактивными, с большим
-                                    функционалом. Профессия отлично подойдет тем, кто хочет фрилансить и постоянно
-                                    разрабатывать новые проекты</p>
-                                <div className="title--group--block--icon">
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a href="#">Подробнее <BsArrowRight/></a>
-                                </div>
-                            </div>
-                        </a>
+                       <NavLink to={'/detailCourses'}><div className="title--group--block">
+                           <h1>Frontend-разработчик</h1>
+                           <p>Мастер создания сайтов. Умеет делать их красивыми, интерактивными, с большим
+                               функционалом. Профессия отлично подойдет тем, кто хочет фрилансить и постоянно
+                               разрабатывать новые проекты</p>
+                           <div className="title--group--block--icon">
+                               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                               <a href="#">Подробнее <BsArrowRight/></a>
+                           </div>
+                       </div></NavLink>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a href="#">
-                            <div className="title--group--block">
-                                <h1>Backend-разработчик</h1>
-                                <p>Специалист, который отвечает за построение логики для воплощения любой идеи. Он
-                                    собирает фундамент и опорную систему для проекта - от простого сайта для магазина
-                                    одежды до сложных вычислительных систем нейронных сетей.</p>
-                                <div className="title--group--block--icon">
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a href="#">Подробнее <BsArrowRight/></a>
-                                </div>
-                            </div>
-                        </a>
+                         <NavLink to={'/detailCourses'}><div className="title--group--block">
+                        <h1>Backend-разработчик</h1>
+                        <p>Специалист, который отвечает за построение логики для воплощения любой идеи. Он
+                            собирает фундамент и опорную систему для проекта - от простого сайта для магазина
+                            одежды до сложных вычислительных систем нейронных сетей.</p>
+                        <div className="title--group--block--icon">
+                            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                            <a href="#">Подробнее <BsArrowRight/></a>
+                        </div>
+                    </div></NavLink>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                        <a href="#">
-                            <div className="title--group--block">
-                                <h1>UX / UI Дизайнер</h1>
-                                <p>Креативный специалист, который придумывает дизайн и интерфейс продукта. Специалист
-                                    UX/UI отвечает за подбор форм, цветов, Функциональности дизайна и прочих важных
-                                    параметров для комфорьного использования продукта.</p>
-                                <div className="title--group--block--icon">
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a href="#">Подробнее <BsArrowRight/></a>
-                                </div>
-                            </div>
-                        </a>
+                       <NavLink to={'/detailCourses'}><div className="title--group--block">
+                           <h1>UX / UI Дизайнер</h1>
+                           <p>Креативный специалист, который придумывает дизайн и интерфейс продукта. Специалист
+                               UX/UI отвечает за подбор форм, цветов, Функциональности дизайна и прочих важных
+                               параметров для комфорьного использования продукта.</p>
+                           <div className="title--group--block--icon">
+                               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                               <a href="#">Подробнее <BsArrowRight/></a>
+                           </div>
+                       </div></NavLink>
                     </div>
-                    <button className="all">Все курсы</button>
+                    <NavLink to={'/allCourses'}> <button className="all">Все курсы</button></NavLink>
                 </div>
                 <div className="subtitle">
                     <h1 className="subtitle-h">Мастер-классы</h1>
-                    <div className="subtitle--block">
+                    <NavLink to={'/detailMasterClasses'}> <div className="subtitle--block">
                         <h2>Реактивное программирование на Java: как, зачем и стоит ли? </h2>
                         <p>Программирования появилась сравнительно недавно, лет 10 назад. Что вызвало популярность этого
                             относительно нового подхода и почему сейчас он в тренде, рассказал на конференции РИТ++
                             ...</p>
-                    </div>
-                    <div className="subtitle--block">
+                    </div></NavLink>
+                    <NavLink to={'/detailMasterClasses'}><div className="subtitle--block">
                         <h2>Реактивное программирование на Java: как, зачем и стоит ли? </h2>
                         <p>Программирования появилась сравнительно недавно, лет 10 назад. Что вызвало популярность этого
                             относительно нового подхода и почему сейчас он в тренде, рассказал на конференции РИТ++
                             ...</p>
-                    </div>
-                    <div className="subtitle--block">
+                    </div></NavLink>
+                    <NavLink to={'/detailMasterClasses'}><div className="subtitle--block">
                         <h2>Реактивное программирование на Java: как, зачем и стоит ли? </h2>
                         <p>Программирования появилась сравнительно недавно, лет 10 назад. Что вызвало популярность этого
                             относительно нового подхода и почему сейчас он в тренде, рассказал на конференции РИТ++
                             ...</p>
-                    </div>
-                    <button>Все мастер классы</button>
+                    </div></NavLink>
+                   <NavLink to={'/allMasterClasses'}> <button>Все мастер классы</button></NavLink>
                 </div>
                 <div className="packet">
                     <h1>Уровень пакетов</h1>

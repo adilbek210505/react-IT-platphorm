@@ -4,6 +4,7 @@ import java from "../image/main--photo--java.png"
 import {FaRegAddressBook} from "react-icons/fa";
 import what from "../image/main--photo--what.png"
 import main from "../image/main-photo--all.png"
+import {NavLink} from "react-router-dom";
 const Main = () => {
     return (
         <section id="Mein">
@@ -21,7 +22,7 @@ const Main = () => {
                 <div className="articles">
                     <h1>Последние статьи</h1>
                     <div className="articles--group">
-                        <div className="articles--group--block">
+                        <NavLink to={'/detailArticle'}><div className="articles--group--block">
                             <img className="articles--group--block--image" src={java} alt=""/>
                             <div className="articles--group--block--text">
                                 <h6>Статьи</h6>
@@ -31,9 +32,8 @@ const Main = () => {
                                     <a href="#"><FaRegAddressBook/>Читать</a>
                                     <a href="#">01.02.2022</a>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="articles--group--block">
+                            </div></div></NavLink>
+                        <NavLink to={'/detailArticle'}><div className="articles--group--block">
                             <img src={java} alt=""/>
                             <div className="articles--group--block--text">
                                 <h6>Статьи</h6>
@@ -44,8 +44,8 @@ const Main = () => {
                                     <a href="#">01.02.2022</a>
                                 </div>
                             </div>
-                        </div>
-                        <div className="articles--group--block">
+                        </div></NavLink>
+                        <NavLink to={'/detailArticle'}><div className="articles--group--block">
                             <img src={java} alt=""/>
                             <div className="articles--group--block--text">
                                 <h6>Статьи</h6>
@@ -56,8 +56,8 @@ const Main = () => {
                                     <a href="#">01.02.2022</a>
                                 </div>
                             </div>
-                        </div>
-                        <div className="articles--group--block">
+                        </div></NavLink>
+                        <NavLink to={'/detailArticle'}><div className="articles--group--block">
                             <img src={java} alt=""/>
                             <div className="articles--group--block--text">
                                 <h6>Статьи</h6>
@@ -68,8 +68,8 @@ const Main = () => {
                                     <a href="#">01.02.2022</a>
                                 </div>
                             </div>
-                        </div>
-                        <div className="articles--group--block">
+                        </div></NavLink>
+                        <NavLink to={'/detailArticle'}><div className="articles--group--block">
                             <img src={java} alt=""/>
                             <div className="articles--group--block--text">
                                 <h6>Статьи</h6>
@@ -80,8 +80,8 @@ const Main = () => {
                                     <a href="#">01.02.2022</a>
                                 </div>
                             </div>
-                        </div>
-                        <div className="articles--group--block">
+                        </div></NavLink>
+                        <NavLink to={'/detailArticle'}><div className="articles--group--block">
                             <img src={java} alt=""/>
                             <div className="articles--group--block--text">
                                 <h6>Статьи</h6>
@@ -92,9 +92,9 @@ const Main = () => {
                                     <a href="#">01.02.2022</a>
                                 </div>
                             </div>
-                        </div>
+                        </div></NavLink>
                     </div>
-                    <button>Показать больше</button>
+                    <NavLink to={'/allArticle'}><button>Показать больше</button></NavLink>
                 </div>
                 <div className="subscribe">
                     <div className="subscribe--group">
