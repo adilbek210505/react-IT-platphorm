@@ -34,6 +34,7 @@ const AboutSchool = () => {
                     slidesToScroll: 2,
                     initialSlide: 2
                 }
+
             },
             {
                 breakpoint: 480,
@@ -48,7 +49,7 @@ const AboutSchool = () => {
     return (
         <section id="school">
             <div className="container">
-                <p className="p-text" style={{color: 'white'}}> <NavLink to={'/'}><span style={{color: "white"}}>Главная</span></NavLink> / <NavLink to={'/aboutSchool'}><span style={{color: 'white'}}> О школе</span></NavLink></p>
+                <p className="p-text" style={{color: 'white', padding: '20px 0 0 0 '}}> <NavLink to={'/'}><span style={{color: "white"}}>Главная</span></NavLink> / <NavLink to={'/aboutSchool'}><span style={{color: 'white'}}> О школе</span></NavLink></p>
                 <div className="school">
                     <div className="school--left">
                         <h1>О нашей школе:</h1>

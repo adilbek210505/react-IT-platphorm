@@ -120,10 +120,10 @@
       align-items: center;
       justify-content: space-between;
       background: #102146;
-      width: 350px;
+      width: 340px;
       padding: 20px 30px;
       height: 272px;
-      border: 2px solid ;
+      border: 15px solid #0A1128;
       img{
         padding-left:170px;
       }
@@ -220,9 +220,11 @@
   .container{
     width: 90%;
   }
+
   #page{
 
   }
+
    #global{
      .group{
        margin-bottom: 132px;
@@ -297,6 +299,14 @@
    }
  }
 @media (max-width:769px) {
+  #page{
+    .pages{
+      &--home{
+        font-size: 13px;
+        line-height: 333px;
+      }
+    }
+  }
 #global{
   .group{
     padding-top: 106px;
@@ -341,6 +351,8 @@
      &--title{
      }
     &--p{
+
+      font-size: 15px;
       width: 477px;
     }
      &--cer{
@@ -399,9 +411,16 @@
 #part{
   .certificate{
     &--p{
+      font-size: 19px;
+      line-height: 49px;
       width: 311px;
       text-align: center;
     }
+  }
+}
+#slide{
+  &--title{
+    font-size: 19px;
   }
 }
 
@@ -409,14 +428,26 @@
 #page .all--text {
   padding: 34px 0;
 }
-#page #global .group--leave__inputs--bl {
-  width: 314px;
-  height: 48px;
-}
-
 #global{
   .group{
     padding-top: 136px;
+    &--request{
+      &__title{
+        font-size: 29px;
+      }
+      &__text{
+        font-size: 11px;
+        padding: 27px 0;
+      }
+    }
+    &--leave{
+     &__inputs{
+       &--bl{
+         width: 270px;
+         height: 41px;
+       }
+     }
+    }
     &--send{
       &__btn {
         height: 33px;
@@ -426,30 +457,50 @@
     }
   }
 }
+  #page{
+    .slide{
+      &--title{
+        font-size: 23px;
+        text-align: center;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 320px) {
   .slide{
     &--title {
-      font-size: 20px;
+      font-size: 19px;
     }
   }
   #page #global .group--leave__inputs--bl {
-    width: 290px;
+    width: 247px;;
     height: 48px;
   }
-}
+
+
 #global{
   .group{
     padding-top: 131px;
     margin-bottom: 94px;
+    &--request{
+      &__text{
+        font-size: 9px;
+        padding: 10px 1px;
+      }
+    }
   }
   #part{
     .certificate{
       font-size: 28px;
-
+   &--p{
+     font-size: 15px;
+     line-height: 55px;
+   }
     }
   }
+}
 }
 
 

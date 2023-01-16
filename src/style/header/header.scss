@@ -10,14 +10,19 @@ $whiteColor: #FFFFFF;
 #header{
   position: fixed;
   z-index: 99;
-  width: 100%;
+  width: 110%;
   backdrop-filter: blur(40px);
   padding: 20px 0;
+
 .header {
   @include display();
+  align-items: center;
   .logo {
     @include display();
-
+    margin: 19px 184px 0 15px;
+    .header-nav{
+      padding: 0 508px 0 0;
+    }
     .header-nav a{
       font-style: normal;
       font-weight: 500;
@@ -30,10 +35,14 @@ $whiteColor: #FFFFFF;
     }
   }
   .right_site {
+    display: flex;
+    align-items: center;
     .Enter {
-      margin-left: 25px;
+      //margin-left: 25px;
+
       text-align: center;
       color: $whiteColor;
+      background: transparent;
       text-decoration: none;
       margin: 0 20px;
     }
@@ -48,21 +57,52 @@ $whiteColor: #FFFFFF;
       cursor: pointer;
     }
   }
-      .header--mobile_menu_icon{
-        display: none;
-  }
-}
+
 }
 
+}
+.enter{
+  display: none;
+}
+.enterBlock{
+  display: block;
+}
+.header--mobile_menu_icon{
+  display: none;
+}
 
 @media (max-width: 768px) {
   #header {
+
+    .header--mobile_menu_icon {
+      display: block;
+      position:  relative;
+      z-index: 10;
+    }
     .header {
+      .nav-link-mobile a {
+        margin: 10px 0 ;
+        color: #FFFFFF;
+        padding: 20px 0;
+      }
+      .header-btn {
+        padding: 13px 30px;
+        border-radius: 10px;
+        background: #044076;
+        color: #fff;
+      }
       text-align: center;
       .logo {
-        display: none;
+        display: flex;
+        flex-direction: column;
+
+        .nav-link-mobile {
+          display: flex;
+          flex-direction: column;
+      }
 
         .header-nav a {
+          display: none;
           font-style: normal;
           font-weight: 500;
           font-size: 16px;
@@ -80,17 +120,10 @@ $whiteColor: #FFFFFF;
          color: #FFFFFF;
           font-size: 20px;
         }
-
-        .header-btn {
-          //display: none;
-        }
-      }
-      .header--mobile_menu_icon {
-        display: block;
       }
       .nav-link-mobile{
-        //position: absolute;
         display: block;
+        margin: 0 0 0 40px;
         color: #FFFFFF;
         font-style: normal;
         font-weight: 500;
@@ -98,23 +131,225 @@ $whiteColor: #FFFFFF;
         line-height: 20px;
         text-align: center;
         text-decoration: none;
-        margin-left: 20px;
-
       }
     }
   }
 }
+@media(max-width: 1024px){
+  #header{
+    width: 1239px;
+    .header{
+      .logo{
 
-
-
-
-
-
-
-
-
-
-
+        .header-nav{
+          padding: 0 621px 0 0;
+        }
+      }
+      .right_site{
+        //width: 20px;
+        .Enter{
+          margin-left: -337px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1280px) {
+  #header{
+  width: 1484px;
+  }
+}
+@media (max-width: 1220px) {
+  #header{
+    width: 1439px;
+    .header{
+      .logo{
+        .header-nav{
+          padding: 0 405px 0 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1150px) {
+  #header{
+    width: 1340px;
+  }
+}
+@media (max-width: 1160px) {
+  #header{
+    width: 1330px;
+  }
+}
+@media (max-width: 976px) {
+  #header{
+    width: 1170px;
+    .header{
+      .logo{
+        .header-nav{
+          padding: 0 176px 0 0;
+        }
+        .nav-link-mobile{
+          padding: 30px 0;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 815px) {
+  #header{
+    width: 1000px;
+    .header{
+      .logo{
+        .header-nav{
+          padding: 0 78px 0 0;
+        }
+        .nav-link-mobile{
+          left: -200px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 865px) {
+  #header{
+    .header--mobile_menu_icon{
+      left: 15px;
+      display: block;
+      position: relative;
+      z-index: 10;
+    }
+    .header{
+      .logo{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+        .header-nav{
+          display: none;
+        }
+        .nav-link-mobile{
+          display: flex;
+          flex-direction: column;
+          margin: 0 259px 0 0;
+          .link{
+            color: #FFFFFF;
+            padding: 41px;
+            //margin: -8px 278px 0 0;
+            text-align: center;
+          }
+        }
+        .right_site{
+          display: none;
+        }
+        .nav-link-mobile{
+          .Enter{
+            width: 97px;
+            height: 25px;
+            background: transparent;
+            color: wheat;
+            font-size: 20px;
+            font-weight: 500;
+          }
+          .header-btn{
+            width: 106px;
+            height: 30px;
+            background: #044076;
+            color: #FFFFFF;
+            border-radius: 5px;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 630px) {
+  #header{
+    .header--mobile_menu_icon{
+      left: -140px;
+      display: block;
+      position: relative;
+      z-index: 10;
+    }
+    .header{
+      .logo{
+        .header-nav{
+          display: none;
+        }
+        .nav-link-mobile{
+          display: flex;
+          margin: 0 370px 0 0;
+        }
+        .right_site{
+          display: none;
+        }
+        .nav-link-mobile{
+          .header-btn{
+            width: 134px;
+            height: 38px;
+            background: #044076;
+            color: #FFFFFF;
+            border-radius: 5px;
+            margin-top: -18px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  #header{
+    .header--mobile_menu_icon{
+      left: -190px;
+      display: block;
+      position: relative;
+      z-index: 10;
+    }
+    .header{
+      .logo{
+        .header-nav{
+        }
+      }
+    }
+  }
+}
+@media (max-width: 376px) {
+  .header--mobile_menu_icon{
+    left: 440px;
+    margin: 0px 107px -37px 460px;
+    display: flex;
+    position: relative;
+    z-index: 10;
+  }
+}
+@media (max-width: 320px) {
+  #header{
+    .header--mobile_menu_icon{
+      left: -430px;
+      display: block;
+      position: relative;
+      z-index: 10;
+    }
+    .header{
+      .logo{
+        .header-nav{
+          display: none;
+        }
+        .nav-link-mobile{
+        display: flex;
+          left: -125px;
+          position: relative;
+          z-index: 99;
+        }
+        .right_site{
+          display: none;
+        }
+      }
+    }
+  }
+}
 
 
 

@@ -1,18 +1,98 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
 const Follow = () => {
 
     return (
-        <section id="Follow">
-            <h1>Главная / Оформить подписку</h1>
+        <div id="hero">
+            <p><span>
+                <NavLink to={'/'}>Главная</NavLink></span><span>/ Оформить подписку</span></p>
             <div className="container">
-                <div className="follow">
+                <div className="hero">
                     <h1>Год</h1>
-                    <input type="text"/>
+                    <fieldset>
+                        <input type="text"/>
+                        <legend> Ф.И.О*</legend>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            Телефон*
+                        </legend>
+                        <input type="tel" placeholder="+996"/>
+                    </fieldset>
+                    <fieldset>
+                        <input type="text"/>
+                        <legend> E mail*
+                        </legend>
+                    </fieldset>
+                    <fieldset>
+                        <input type="password"/>
+                        <legend> Пароль*</legend>
+
+                    </fieldset>
+                    <h4>Выберите платежную карту</h4>
+                    <div className="hero--pay">
+                        <div className="hero--pay__visa">
+                            <div className="hero--pay__visa--block">
+                                <input type="radio" className="hero--pay__visa--block__line"/><h4>Visa</h4>
+                            </div>
+                        </div>
+                        <div className="hero--pay__card">
+                            <div className="hero--pay__card--block"><input type="radio"
+                                                                           className="hero--pay__card--block__line"/>
+                                <h4>MasterCard</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <fieldset>
+                        <input type="text"/>
+                        <legend> Номер карты *</legend>
+
+                    </fieldset>
+                    <div className="hero--service">
+                        <fieldset>
+                            <input type="text"/>
+                            <legend>
+                                ММ/ГГ *
+                            </legend>
+                        </fieldset>
+                        <fieldset>
+                            <legend> CVC *
+                            </legend>
+                            <input type="text"/>
+                        </fieldset>
+                    </div>
+                    <div className="hero--agree">
+                        <div className="hero--agree__click"></div>
+                        <h4>Я ознакомился и согласен с Условиями оказания услуг</h4>
+                    </div>
+                    <div className="hero--button">
+                        <button>Оплатить 225.00$</button>
+                    </div>
+                    <div className="hero--text">
+                        <h3>Все мастер-классы нашей школы</h3>
+                        <h3>6 новых статей каждый месяц.</h3>
+                        <h3>
+                            Образовательная платформа доступна на <br/> условиях ежегодной подписки.
+                        </h3>
+                    </div>
+                    <div className="hero--follow">
+                        <p>Другие варианты подписки:</p>
+                        <button>Год + - 585,00 $/год</button>
+                        <button>Месяц - 105,00 $/год</button>
+                        <h3>Отменить можно в любой момент!</h3>
+                        <h3>При оплате через Fondy, с Вашей карты автоматически будут <br/> списываться 225,00 $/год,
+                            которые являются стандартной <br/>
+                                ценой участия.
+                        </h3>
+                        <h3> Вы всегда можете отменить подписку в Вашем личном <br/>
+                            кабинете и больше списаний не будет.
+                        </h3>
+                    </div>
                 </div>
             </div>
-        </section>
-    );
-};
+        </div>
+    )
+}
 
 export default Follow;

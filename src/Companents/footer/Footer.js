@@ -6,6 +6,7 @@ import {CiFacebook, CiLocationOn} from "react-icons/ci";
 import {RxTwitterLogo} from "react-icons/rx";
 import {AiOutlineMail} from "react-icons/ai";
 import {SiTiktok} from "react-icons/si";
+import {NavLink} from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -13,14 +14,14 @@ const Footer = () => {
             <div className="container">
                 <div className="footer">
                     <div className="footer--logo">
-                        <img src={logo} alt=""/>
+                        <NavLink to={'/'}><img src={logo} alt=""/></NavLink>
                         <h1>kg|ru</h1>
                     </div>
                     <div className="footer--link">
                         <h1>Быстрые ссылки</h1>
-                        <a href="#">О школе</a>
-                        <a href="#">Наши курсы</a>
-                        <a href="#">О нас</a>
+                      <NavLink to={'/aboutSchool'}><a href="#">О школе</a></NavLink>
+                       <NavLink to={'/ourCourses'}> <a href="#">Наши курсы</a></NavLink>
+                       <NavLink to={'/AboutUs'}> <a href="#">О нас</a></NavLink>
                     </div>
                     <div className="footer--Social-network">
                         <h1>Социальные сети</h1>

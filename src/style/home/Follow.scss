@@ -1,0 +1,218 @@
+#hero {
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A5A5A5;
+
+    span {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 20px;
+      color: #A5A5A5;
+    }
+  }
+
+  .hero {
+    h1 {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      color: #FFFFFF;
+    }
+
+    fieldset {
+      width: 435px;
+      height: 35px;
+      border: 1px solid #FFFFFF;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      margin: 31px 0;
+
+      input {
+        background: transparent;
+        color: white;
+        border: none;
+        outline: none;
+        width: 300px;
+        padding: 5px 5px;
+      }
+
+      legend {
+        color: white;
+      }
+    }
+
+    h4 {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+    }
+
+    &--pay {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &__visa {
+        width: 200px;
+        height: 50px;
+        left: 397px;
+        top: 776px;
+        border: 1px solid #FFFFFF;
+        display: flex;
+        border-radius: 4px;
+
+        &--block {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          &__line {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: 1px solid white;
+            background: transparent;
+            margin: 0 30px;
+          }
+
+          h4 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+          }
+        }
+      }
+
+      &__card {
+        width: 200px;
+        height: 50px;
+        left: 397px;
+        top: 776px;
+        border: 1px solid #FFFFFF;
+        display: flex;
+        border-radius: 4px;
+
+        &--block {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          &__line {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: 1px solid white;
+            background: transparent;
+            margin: 0 25px;
+          }
+
+          h4 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+
+    &--service {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      fieldset {
+        width: 190px;
+        margin: 20px 0;
+
+        input {
+          width: 150px;
+        }
+      }
+    }
+
+    &--agree {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &__click {
+        width: 35px;
+        height: 35px;
+        left: 397px;
+        top: 1108px;
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+      }
+
+      h4 {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 24px;
+        color: #FFFFFF;
+      }
+    }
+
+    &--button {
+      margin: 20px 0;
+
+      button {
+        width: 460px;
+        height: 45px;
+        background: #04437B;
+        backdrop-filter: blur(7.5px);
+        border-radius: 10px;
+        color: white;
+        border: none;
+        font-size: 17px;
+      }
+    }
+
+    &--text {
+      h3 {
+        font-weight: 200;
+        font-size: 22px;
+        line-height: 29px;
+        color: #FFFFFF;
+      }
+    }
+
+    &--follow {
+      p {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;
+      }
+
+      button {
+        width: 304.72px;
+        height: 55px;
+        margin: 15px 0;
+        background: #0A1128;
+        box-shadow: 10px 10px 22px -117px #132049, -4px -3px 25px #040B23;
+        border-radius: 10px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        border: none;
+        color: #FFFFFF;
+      }
+
+      h3 {
+        display: flex;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 29px;
+        color: #FFFFFF;
+      }
+    }
+  }
+}

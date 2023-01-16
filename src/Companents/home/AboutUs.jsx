@@ -10,6 +10,7 @@ import certificate from '../image/aboutus.certificate.png'
 import victor from '../image/aboutus.victor.svg'
 import alina from '../image/aboutus.alina.svg'
 import erlan from '../image/aboutus.erlan.svg'
+import {NavLink} from "react-router-dom";
 
 const AboutUs = () => {
     var settings = {
@@ -50,7 +51,8 @@ const AboutUs = () => {
         <div id="page">
             <div className="container">
                 <div className='pages'>
-                    <p className='pages--home'>Главная / <span className='pages--about'>О нас</span></p>
+                    <p className='pages--home'><NavLink to={'/'}><span style={{color: 'white'}}>Главная /</span> </NavLink><NavLink to={'/AboutUs'}><span style={{color: 'white'}} className='pages--about'>О нас</span></NavLink>
+                    </p>
                 </div>
                 <div className='all'>
                     <h1 className="all--us">О нас</h1>

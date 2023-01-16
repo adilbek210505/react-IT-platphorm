@@ -1,5 +1,7 @@
 import React from 'react';
 import fon from "../image/Packet-fon.png"
+import {NavLink} from "react-router-dom";
+import {BsCheck2} from "react-icons/bs";
 
 
 const Packet = () => {
@@ -15,11 +17,15 @@ const Packet = () => {
                             <h5>Месяц +</h5>
                             <h2>105,00 $</h2>
                             <button>Ежемесячно</button>
-                            <p>Все статьи</p>
+                            <a>
+                                <BsCheck2 className="icons"/>
+                                <p>Все статьи</p>
+                            </a>
 
                         </div>
-                        <button className="hero--block1__btn">Оформить подписку</button>
-
+                        <NavLink to={'/follow'}>
+                            <button className="hero--block1__btn">Оформить подписку</button>
+                        </NavLink>
                     </div>
 
                     <div className="hero--block2">
@@ -28,11 +34,20 @@ const Packet = () => {
                             <h2>220,00 $</h2>
                             <button>Ежегодно</button>
                             <div className="hero--block2__medium--p">
-                                <p>Все статьи</p>
-                                <p>Все мастер классы</p>
+                                <a>
+                                    <BsCheck2 className="icons"/>
+                                    <p>Все статьи</p>
+                                </a>
+                                <a href="">
+                                    <BsCheck2 className="icons"/>
+                                    <p>Все мастер классы</p>
+                                </a>
+
                             </div>
                         </div>
-                        <button className="hero--block2__btn">Оформить подписку</button>
+                        <NavLink to={'/follow'}>
+                            <button className="hero--block2__btn">Оформить подписку</button>
+                        </NavLink>
                     </div>
 
                     <div className="hero--block3">
@@ -41,14 +56,29 @@ const Packet = () => {
                             <h2>585,00 $</h2>
                             <button>Ежегодно</button>
                             <div className="hero--block3__right--p">
-                                <p>Все статьи</p>
-                                <p>Все мастер классы</p>
-                                <p>6 новых статей каждый месяц</p>
-                                <p>Доступ к курсу “DevOps - <br/> инженер”</p>
+                                <a>
+                                    <BsCheck2 className="icons"/>
+                                    <p>Все статьи</p>
+                                </a>
+                                <a>
+                                    <BsCheck2 className="icons"/>
+                                    <p>Все мастер классы</p>                                </a>
+                                <a>
+                                    <BsCheck2 className="icons"/>
+                                    <p>6 новых статей каждый месяц</p>
+                                </a>
+                                <a>
+                                    <BsCheck2 className="icons"/>
+                                    <p>Доступ к курсу “DevOps  <br/> инженер”</p>
+                                </a>
+
+
                             </div>
 
                         </div>
-                        <button className="hero--block3__btn">Оформить подписку</button>
+                        <NavLink to={'/follow'}>
+                            <button className="hero--block3__btn">Оформить подписку</button>
+                        </NavLink>
 
                     </div>
                 </div>
@@ -105,7 +135,8 @@ const Packet = () => {
                                         могут использоваться при написании кода для иных целей, <br/>
                                         например, для именования переменных. Примеры <br/>
                                         распространенных ключевых слов в языках программирования <br/>
-                                        – это конструкции if/then/else или различные варианты циклов. <br/> Вроде for и while.
+                                        – это конструкции if/then/else или различные варианты циклов. <br/> Вроде for и
+                                        while.
                                     </p>
                                 </div>
                                 <hr/>

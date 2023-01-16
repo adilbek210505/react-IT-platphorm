@@ -1,0 +1,190 @@
+#Comment {
+  .container {
+    .comment {
+      padding: 166px 0 0 0;
+
+      h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        color: #FFFFFF;
+      }
+
+      &--input {
+        display: flex;
+
+        &--left {
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #A4A4A4;
+          }
+
+          input {
+            font-weight: 400;
+            font-size: 14px;
+            color: #FFFFFF;
+            width: 314px;
+            height: 44px;
+            background: rgba(27, 41, 89, 0.4);
+            padding-left: 10px;
+            border-radius: 10px;
+          }
+
+          &--block {
+            display: flex;
+            align-items: center;
+
+            button {
+              margin: 0 10px;
+              width: 150px;
+              height: 44px;
+              background: rgba(27, 41, 89, 0.4);
+              border-radius: 10px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #A4A4A4;
+
+              input {
+                margin: 0 10px;
+                width: 14px;
+                height: 44px;
+              }
+            }
+          }
+        }
+
+        &--right {
+          &--sel {
+            p {
+              font-weight: 400;
+              font-size: 14px;
+              color: #A4A4A4;
+            }
+
+            select {
+              padding: 10px;
+              background: rgba(27, 41, 89, 0.4);
+              border-radius: 10px;
+              color: #A4A4A4;
+              border: none;
+              outline: none;
+              margin: 0 10px 0 0;
+
+              option {
+                p {
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: #FFFFFF;
+                }
+              }
+            }
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            color: #A4A4A4;
+            padding: 10px 0;
+          }
+
+          &--option {
+            select {
+              width: 308px;
+              outline: none;
+              border: none;
+              height: 44px;
+              background: rgba(27, 41, 89, 0.4);
+              color: #A4A4A4;
+              border-radius: 10px;
+
+              option {
+                p {
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: #FFFFFF;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #Comment {
+    .container {
+      .comment {
+        h1 {
+          font-size: 26px;
+        }
+
+        &--input {
+          display: flex;
+          flex-direction: column;
+
+          &--left {
+            margin: 30px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .all-content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+
+  #Comment {
+    .container {
+      .comment {
+
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #Comment {
+    .container {
+      .comment {
+        &--input {
+          &--right {
+            &--option {
+              select {
+                width: 260px;
+              }
+            }
+          }
+          input {
+            width: 90%;
+          }
+          &--left {
+            &--block {
+              button {
+                width: 119px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
