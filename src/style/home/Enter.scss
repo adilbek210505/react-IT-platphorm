@@ -1,0 +1,256 @@
+
+#follow {
+
+  background: #0A1128;
+  background-size: cover;
+  width: 100%;
+  height: 110%;
+  overflow: hidden;
+  position: relative;
+  top: -97px;
+  padding: 87px 0;
+
+
+  .follow {
+    padding: 157px 0;
+    //position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    //background: #0A1128;
+    //width: 100%;
+    //height: 288%;
+    //overflow: hidden;
+    //left: 0;
+    //top: 0;
+
+    &--img {
+      width: 70px;
+      margin: -96px -3px 57px -136px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .Enter--p {
+      color: #FFFFFF;
+      margin-top: 20px;
+      margin-left: 10px;
+      position: absolute;
+      z-index: 1;
+    }
+
+    .Enter--fieldset {
+      width: 465px;
+      height: 50px;
+      border: 1px solid #FFFFFF;
+      background: transparent;
+      border-radius: 5px;
+      display: flex;
+      padding: 0 15px;
+      align-items: center;
+      font-size: 15px;
+      margin: 31px 0;
+      color: #FFFFFF;
+    }
+
+    .Enter_password {
+      color: #FFFFFF;
+      margin-left: 10px;
+      margin-top: -11px;
+      position: absolute;
+
+    }
+
+    .Enter--check {
+      color: #FFFFFF;
+      margin: -76px 19px 0 442px;
+      position: absolute;
+    }
+
+    &--button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .enter-btn {
+        width: 188px;
+        height: 45px;
+        left: 470px;
+        top: 478px;
+        border: none;
+        background: #034078;
+        border-radius: 10px;
+        color: white;
+        font-size: 15px;
+      }
+
+      .enter-h4 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+        margin-left: 161px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #follow {
+    .follow {
+      .hero--img {
+        margin: -7px -190px;
+      }
+
+      .Enter--fieldset {
+        //margin: 31px 56px;
+        padding-left: -36px;
+        margin-left: -300px;
+      }
+
+      .Enter--p {
+        margin-left: -285px;
+      }
+
+      .Enter_password {
+        margin-left: -285px;
+      }
+
+      .Enter--check {
+        margin: -71px 0 0 145px;
+      }
+
+      .follow--button {
+        margin-left: -126px;
+
+        .enter-btn {
+          margin-left: -250px;
+        }
+
+        .enter-h4 {
+          margin-left: 19px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #follow {
+    .follow {
+      .hero--img {
+        margin: -7px -240px;
+      }
+
+      .Enter--fieldset {
+        //margin: 31px 56px;
+        padding-left: -36px;
+        margin-left: -426px;
+      }
+
+      .follow--button {
+        margin-left: -126px;
+
+        .enter-btn {
+          margin-left: -250px;
+        }
+
+        .enter-h4 {
+          margin-left: 19px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  #follow {
+    .follow {
+      .hero--img {
+        margin: -7px -349px;
+      }
+
+      .Enter--fieldset {
+        //margin: 31px 56px;
+        width: 263px;
+        padding-left: -36px;
+        margin-left: -462px;
+
+        .enter-input {
+          width: 40px;
+        }
+      }
+
+      .Enter_password {
+        margin-left: -440px;
+      }
+
+      .Enter--p {
+        margin-left: -440px;
+      }
+
+      .Enter--check {
+        left: 136px;
+        position: absolute;
+      }
+
+      .follow--button {
+        margin-left: -126px;
+
+        .enter-btn {
+          margin-left: -271px;
+        }
+
+        .enter-h4 {
+          margin-left: 19px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #follow {
+    .follow {
+      .hero--img {
+        margin: -7px -385px;
+      }
+
+      .Enter--fieldset {
+        //margin: 31px 56px;
+        width: 255px;
+        padding-left: -36px;
+        margin-left: -483px;
+      }
+
+      .Enter--p {
+        margin-left: -473px;
+      }
+
+      .Enter_password {
+        margin-left: -473px;
+      }
+
+      .Enter--check {
+        left: 106px;
+        position: absolute;
+      }
+
+      .follow--button {
+        margin-left: -126px;
+
+        .enter-btn {
+          margin-left: -293px;
+        }
+
+        .enter-h4 {
+          margin-left: 19px;
+        }
+      }
+    }
+  }
+}
