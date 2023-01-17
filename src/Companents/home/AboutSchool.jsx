@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import benner from "../image/AboutSchool-school--right-img.png"
 import {BsArrowRight} from "react-icons/bs";
 import sliderImage from "../image/AboutSchool-slider-two--img.svg"
@@ -7,9 +7,11 @@ import slideri from "../image/AboutSchool-slider-three--img.svg"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
+import {PageContext} from "../../context";
 const AboutSchool = () => {
-
+    const {page} = useContext(PageContext)
+    const navigate = useNavigate()
     const settings = {
         dots: true,
         infinite: true,
@@ -67,7 +69,7 @@ const AboutSchool = () => {
                     <h1 className="title--h">Курсы</h1>
                     <div className="title--group">
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                       <NavLink to={'/detailCourses'}><div className="title--group--block">
+                      <div onClick={()=> navigate(page ? '/detailCourses' : '/afterCourses')} className="title--group--block">
                            <h1>Frontend-разработчик</h1>
                            <p>Мастер создания сайтов. Умеет делать их красивыми, интерактивными, с большим
                                функционалом. Профессия отлично подойдет тем, кто хочет фрилансить и постоянно
@@ -76,9 +78,9 @@ const AboutSchool = () => {
                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                <a href="#">Подробнее <BsArrowRight/></a>
                            </div>
-                       </div></NavLink>
+                       </div>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                         <NavLink to={'/detailCourses'}><div className="title--group--block">
+                       <div  onClick={()=> navigate(page ? '/afterCourses' : '/afterCourses')} className="title--group--block">
                         <h1>Backend-разработчик</h1>
                         <p>Специалист, который отвечает за построение логики для воплощения любой идеи. Он
                             собирает фундамент и опорную систему для проекта - от простого сайта для магазина
@@ -87,9 +89,9 @@ const AboutSchool = () => {
                             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                             <a href="#">Подробнее <BsArrowRight/></a>
                         </div>
-                    </div></NavLink>
+                    </div>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                       <NavLink to={'/detailCourses'}><div className="title--group--block">
+                       <div onClick={()=> navigate(page ? '/afterCourses' : '/afterCourses')}  className="title--group--block">
                            <h1>UX / UI Дизайнер</h1>
                            <p>Креативный специалист, который придумывает дизайн и интерфейс продукта. Специалист
                                UX/UI отвечает за подбор форм, цветов, Функциональности дизайна и прочих важных
@@ -98,30 +100,30 @@ const AboutSchool = () => {
                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                                <a href="#">Подробнее <BsArrowRight/></a>
                            </div>
-                       </div></NavLink>
+                       </div>
                     </div>
                     <NavLink to={'/allCourses'}> <button className="all">Все курсы</button></NavLink>
                 </div>
                 <div className="subtitle">
                     <h1 className="subtitle-h">Мастер-классы</h1>
-                    <NavLink to={'/detailMasterClasses'}> <div className="subtitle--block">
+                    <div onClick={()=> navigate(page ? '/detailMasterClasses' : '/afterMaster')} className="subtitle--block">
                         <h2>Реактивное программирование на Java: как, зачем и стоит ли? </h2>
                         <p>Программирования появилась сравнительно недавно, лет 10 назад. Что вызвало популярность этого
                             относительно нового подхода и почему сейчас он в тренде, рассказал на конференции РИТ++
                             ...</p>
-                    </div></NavLink>
-                    <NavLink to={'/detailMasterClasses'}><div className="subtitle--block">
+                    </div>
+                    <div onClick={()=> navigate(page ? '/detailMasterClasses' : '/afterMaster')} className="subtitle--block">
                         <h2>Реактивное программирование на Java: как, зачем и стоит ли? </h2>
                         <p>Программирования появилась сравнительно недавно, лет 10 назад. Что вызвало популярность этого
                             относительно нового подхода и почему сейчас он в тренде, рассказал на конференции РИТ++
                             ...</p>
-                    </div></NavLink>
-                    <NavLink to={'/detailMasterClasses'}><div className="subtitle--block">
+                    </div>
+                    <div onClick={()=> navigate(page ? '/detailMasterClasses' : '/afterMaster')} className="subtitle--block">
                         <h2>Реактивное программирование на Java: как, зачем и стоит ли? </h2>
                         <p>Программирования появилась сравнительно недавно, лет 10 назад. Что вызвало популярность этого
                             относительно нового подхода и почему сейчас он в тренде, рассказал на конференции РИТ++
                             ...</p>
-                    </div></NavLink>
+                    </div>
                    <NavLink to={'/allMasterClasses'}> <button>Все мастер классы</button></NavLink>
                 </div>
                 <div className="packet">

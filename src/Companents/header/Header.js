@@ -1,12 +1,16 @@
-import React, {useEffect, useState} from 'react';
-import {Link, NavLink} from "react-router-dom";
+import React, {useContext, useEffect, useState} from 'react';
+import {Link, NavLink, useNavigate} from "react-router-dom";
 import logo from "../image/logo.svg"
 import {FaBars, FaTimes} from "react-icons/fa";
 import Enter from "../enter/Enter";
+import {PageContext} from "../../context";
+import {AiOutlineBell} from "react-icons/ai";
 
 const Header = () => {
     const [mobile, setMobile] = useState(false)
     const [enter, setEnter] = useState(true)
+    const {page} = useContext(PageContext)
+    const navigate = useNavigate()
     const getNavbar = () => {
         setMobile(!mobile)
     }
@@ -37,10 +41,9 @@ const Header = () => {
                             </div>
 
                             <div className={mobile ? 'nav-link-mobile' : "right_site"}>
-                                <button onClick={()=> setEnter(!enter)} className='Enter'>Войти</button>
-                                <Link to={'/packet'}>
-                                    <button className="header-btn">Подписаться</button>
-                                </Link>
+                                {page ? <>   <button onClick={()=> setEnter(!enter)} className='Enter'>Войти</button>
+                                    <button onClick={()=> navigate('/packet')} className="header-btn">Подписаться</button></>
+                                    : <div> <AiOutlineBell onClick={()=> navigate('/notice')} style={{color: "white"}}/> <button onClick={()=> navigate('/profile')}>Профиль</button></div>}
                             </div>
                         </div>
                     </div>

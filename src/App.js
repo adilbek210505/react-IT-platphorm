@@ -16,6 +16,11 @@ import DetailMasterClasses from "./Companents/masterClasses/detailMasterClasses/
 import AllCourses from "./Companents/courses/AllCourses/AllCourses";
 import DetailCoureses from "./Companents/courses/detailCourses/detailCoureses";
 import Courses from "./Companents/courses/Courses/Courses";
+import AfterArticle from "./Companents/article/afterArticle/AfterArticle";
+import AfterMaster from "./Companents/masterClasses/afterMaster/AfterMaster";
+import AfterCourses from "./Companents/courses/afterCourses/AfterCourses";
+import Notice from "./Companents/profil/notice/Notice";
+
 
 
 function App() {
@@ -37,6 +42,10 @@ function App() {
                     <Route path={'/allCourses'} element={<AllCourses/>}/>
                     <Route path={'/detailCourses'} element={<DetailCoureses/>}/>
                     <Route path={'/courses'} element={<Courses/>}/>
+                    <Route path={'/afterArticle'} element={<AfterArticle/>}/>
+                    <Route path={'/afterMaster'} element={<AfterMaster/>}/>
+                    <Route path={'/afterCourses'} element={<AfterCourses/>}/>
+                    <Route path={'/notice'} element={<Notice/>}/>
                 </Routes>
 
             </div>
