@@ -1,11 +1,14 @@
-import React from "react";
+import React, {useContext} from "react";
 import photo from "../image/main--photo.png"
 import java from "../image/main--photo--java.png"
 import {FaRegAddressBook} from "react-icons/fa";
 import what from "../image/main--photo--what.png"
 import main from "../image/main-photo--all.png"
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
+import {PageContext} from "../../context";
 const Main = () => {
+    const {page } = useContext(PageContext)
+    const navigate = useNavigate()
     return (
         <section id="Mein">
             <div className="container">
@@ -22,7 +25,7 @@ const Main = () => {
                 <div className="articles">
                     <h1>Последние статьи</h1>
                     <div className="articles--group">
-                        <NavLink to={'/detailArticle'}><div className="articles--group--block">
+                        <div onClick={()=> navigate(page ? '/detailArticle' : '/afterArticle')} className="articles--group--block">
                             <img className="articles--group--block--image" src={java} alt=""/>
                             <div className="articles--group--block--text">
                                 <h6>Статьи</h6>
@@ -32,8 +35,8 @@ const Main = () => {
                                     <a href="#"><FaRegAddressBook/>Читать</a>
                                     <a href="#">01.02.2022</a>
                                 </div>
-                            </div></div></NavLink>
-                        <NavLink to={'/detailArticle'}><div className="articles--group--block">
+                            </div></div>
+                        <div onClick={()=> navigate(page ? '/detailArticle' : '/afterArticle')} className="articles--group--block">
                             <img src={java} alt=""/>
                             <div className="articles--group--block--text">
                                 <h6>Статьи</h6>
@@ -44,8 +47,8 @@ const Main = () => {
                                     <a href="#">01.02.2022</a>
                                 </div>
                             </div>
-                        </div></NavLink>
-                        <NavLink to={'/detailArticle'}><div className="articles--group--block">
+                        </div>
+                        <div onClick={()=> navigate(page ? '/detailArticle' : '/afterArticle')} className="articles--group--block">
                             <img src={java} alt=""/>
                             <div className="articles--group--block--text">
                                 <h6>Статьи</h6>
@@ -56,8 +59,8 @@ const Main = () => {
                                     <a href="#">01.02.2022</a>
                                 </div>
                             </div>
-                        </div></NavLink>
-                        <NavLink to={'/detailArticle'}><div className="articles--group--block">
+                        </div>
+                        <div onClick={()=> navigate(page ? '/detailArticle' : '/afterArticle')} className="articles--group--block">
                             <img src={java} alt=""/>
                             <div className="articles--group--block--text">
                                 <h6>Статьи</h6>
@@ -68,8 +71,8 @@ const Main = () => {
                                     <a href="#">01.02.2022</a>
                                 </div>
                             </div>
-                        </div></NavLink>
-                        <NavLink to={'/detailArticle'}><div className="articles--group--block">
+                        </div>
+                        <div onClick={()=> navigate(page ? '/detailArticle' : '/afterArticle')} className="articles--group--block">
                             <img src={java} alt=""/>
                             <div className="articles--group--block--text">
                                 <h6>Статьи</h6>
@@ -80,8 +83,8 @@ const Main = () => {
                                     <a href="#">01.02.2022</a>
                                 </div>
                             </div>
-                        </div></NavLink>
-                        <NavLink to={'/detailArticle'}><div className="articles--group--block">
+                        </div>
+                        <div onClick={()=> navigate(page ? '/detailArticle' : '/afterArticle')} className="articles--group--block">
                             <img src={java} alt=""/>
                             <div className="articles--group--block--text">
                                 <h6>Статьи</h6>
@@ -92,7 +95,7 @@ const Main = () => {
                                     <a href="#">01.02.2022</a>
                                 </div>
                             </div>
-                        </div></NavLink>
+                        </div>
                     </div>
                     <NavLink to={'/allArticle'}><button>Показать больше</button></NavLink>
                 </div>

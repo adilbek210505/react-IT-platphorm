@@ -1,8 +1,15 @@
-import React from 'react';
-import {NavLink} from "react-router-dom";
+import React, {useContext} from 'react';
+import {NavLink, useNavigate} from "react-router-dom";
+import {PageContext} from "../../context";
 
 const Follow = () => {
+    const {page, setPage} = useContext(PageContext)
+    const navigate = useNavigate()
 
+    const afterPage = ()=>{
+        setPage(!page)
+        navigate('/')
+    }
     return (
         <div id="hero">
             <p><span>
@@ -67,7 +74,7 @@ const Follow = () => {
                         <h4>Я ознакомился и согласен с Условиями оказания услуг</h4>
                     </div>
                     <div className="hero--button">
-                        <button>Оплатить 225.00$</button>
+                        <button onClick={afterPage}>Оплатить 225.00$</button>
                     </div>
                     <div className="hero--text">
                         <h3>Все мастер-классы нашей школы</h3>
