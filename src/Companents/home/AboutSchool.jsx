@@ -80,7 +80,7 @@ const AboutSchool = () => {
                            </div>
                        </div>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                       <div  onClick={()=> navigate(page ? '/afterCourses' : '/afterCourses')} className="title--group--block">
+                       <div  onClick={()=> navigate(page ? '/detailCourses' : '/afterCourses')} className="title--group--block">
                         <h1>Backend-разработчик</h1>
                         <p>Специалист, который отвечает за построение логики для воплощения любой идеи. Он
                             собирает фундамент и опорную систему для проекта - от простого сайта для магазина
@@ -91,7 +91,7 @@ const AboutSchool = () => {
                         </div>
                     </div>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                       <div onClick={()=> navigate(page ? '/afterCourses' : '/afterCourses')}  className="title--group--block">
+                       <div onClick={()=> navigate(page ? '/detailCourses   ' : '/afterCourses')}  className="title--group--block">
                            <h1>UX / UI Дизайнер</h1>
                            <p>Креативный специалист, который придумывает дизайн и интерфейс продукта. Специалист
                                UX/UI отвечает за подбор форм, цветов, Функциональности дизайна и прочих важных
