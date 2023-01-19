@@ -232,7 +232,9 @@
 
       &--block {
         width: 890px;
-        height: 160px;
+        height: 171px;
+        display: flex;
+        align-items: center;
 
         &__follow {
 
@@ -242,6 +244,21 @@
             line-height: 34px;
             padding-top: 0;
             color: #000000;
+          }
+
+          .text {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 34px;
+            padding-top: 0;
+            color: #000000;
+          }
+          .texts {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            color: #8D8D8D;
+            padding: 20px 0;
           }
         }
 
@@ -315,9 +332,27 @@
 
         &__follow {
           text-align: center;
-          margin-left: 86px;
+          margin-left: 157px;
 
           h2 {
+          }
+
+          .text {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 34px;
+            padding-top: 0;
+            color: #000000;
+            margin-right: 162px;
+          }
+
+          .texts {
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 20px;
+            color: #8D8D8D;
+            padding: 20px 0;
+            margin-right: 169px;
           }
 
         }
@@ -340,6 +375,14 @@
           border-radius: 19px;
           margin: 10px;
           margin-left: 20%;
+
+          h6 {
+            font-weight: 500;
+            font-size: 18.3527px;
+            line-height: 22px;
+            margin: -43px 20px;
+            color: #898989;
+          }
         }
       }
     }
@@ -380,6 +423,11 @@
         width: 526px;
         height: 285px;
 
+        &__follow {
+          text-align: center;
+          margin-left: 97px;
+        }
+
         .text {
           font-weight: 700;
           font-size: 24px;
@@ -390,7 +438,7 @@
         }
 
         .texts {
-          font-size: 14px;
+          font-size: 18px;
           margin-right: 77px;
         }
 
@@ -456,7 +504,7 @@
 
       &--block {
         width: 385px;
-        height: 200px;
+        height: 210px;
         display: flex;
 
 
@@ -468,11 +516,11 @@
 
         .text {
           font-weight: 700;
-          font-size: 16px;
+          font-size: 17px;
           line-height: 34px;
           padding-top: 0;
           color: #000000;
-          margin-right: 59px;
+          margin-right: 15px;
         }
 
         button {
@@ -497,6 +545,10 @@
             line-height: 20px;
             color: #8D8D8D;
             padding: 14px 0;
+          }
+          .texts {
+            font-size: 11px;
+            margin-right: 22px;
           }
         }
       }
@@ -546,7 +598,7 @@
 
         .texts {
           font-size: 14px;
-          margin-right: -10px;
+          margin-right: 14px;
         }
 
         &__follow {
@@ -571,6 +623,8 @@
           background: #FFFFFF;
           border-radius: 19px;
           margin: 14px 0;
+
+
         }
       }
     }
