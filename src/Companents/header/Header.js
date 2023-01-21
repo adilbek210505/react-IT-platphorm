@@ -43,7 +43,8 @@ const Header = () => {
                             <div className={mobile ? 'nav-link-mobile' : "right_site"}>
                                 {page ? <>   <button onClick={()=> setEnter(!enter)} className='Enter'>Войти</button>
                                     <button onClick={()=> navigate('/packet')} className="header-btn">Подписаться</button></>
-                                    : <div> <AiOutlineBell onClick={()=> navigate('/notice')} style={{color: "white"}}/> <button onClick={()=> navigate('/profile')}>Профиль</button></div>}
+                                    : <div> <AiOutlineBell onClick={()=> navigate('/notice')} style={{color: "white", fontSize: '30px' , margin: '0 10px 0 10px'}}/>
+                                        <button onClick={()=> navigate('/profile')} style={{width: '160px' , height : '40px', border: '2px solid #044176',color : '#fff' ,  background : "transparent" , borderRadius: '10px',textAlign : "center"}}>Профиль</button></div>}
                             </div>
                         </div>
                     </div>
