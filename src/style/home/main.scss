@@ -1,3 +1,12 @@
+.show{
+  height: 180px;
+  opacity : 1;
+}
+.accordionContent{
+  height: 0;
+  opacity: 0;
+  transition: all 600ms ease-in-out;
+}
 #Mein {
   padding: 100px 0 0 0;
 
@@ -7,7 +16,7 @@
       align-items: center;
 
       &--left {
-        margin: 196px 0;
+        margin: 339px 0;
 
         h1 {
           font-weight: 700;
@@ -26,14 +35,92 @@
       &--right {
         img {
           position: absolute;
+          right: 0;
           top: 0;
-          left: 0;
-          width: 100%;
-          z-index: -1;
+        }
+        &--children {
+          width: 1200px;
+          height: 1200px;
+          border: 0.5px solid #2E3A56;
+          filter: blur(2.5px);
+          border-radius: 50%;
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          right: 0;
+          top: 0;
+          &--childrens {
+            border-radius: 50%;
+            width: 728.57px;
+            height: 728.57px;
+            border: 0.5px solid #41586B;
+            position: absolute;
+            filter: blur(2.5px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 392px #044076;
+            animation: ani 2s infinite ease-in-out;
+            &--child {
+              animation: ani 2s infinite ease-in-out;
+              width: 454.29px;
+              height: 454.29px;
+              border: 0.5px solid #A1ADBC;
+              filter: blur(2.5px);
+              position: absolute;
+              border-radius: 50%;
+              box-shadow: 0 4px 392px #044076;
+              &--image {
+                &--box {
+                  &--one {
+                    position: absolute;
+                    top: 213px;
+                    z-index: -2;
+                    left: 69px;
+                  }
+                  &--two {
+                    position: absolute;
+                    top: 380px;
+                    left: 304px;
+                    z-index: -2;
+                  }
+                  &--three {
+                    position: absolute;
+                    top: 0;
+                    left: 264px;
+                    z-index: -2;
+                  }
+                  &--four {
+                    position: absolute;
+                    top: 232px;
+                    left: 540px;
+                    z-index: -2;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
-
+    //@keyframes ani {
+    //  0% {
+    //    //transform: rotate(0);
+    //    box-shadow: 0 4px 110px #044076;
+    //    transition: 2s;
+    //  }
+    //  50% {
+    //    box-shadow: 0 4px 310px #044076;
+    //    //transform: rotate(360deg);
+    //    transform: scale(1.1);
+    //
+    //  }
+    //  100% {
+    //    //transform: rotate(0);
+    //
+    //  }
+    //}
     .articles {
       display: flex;
       flex-direction: column;
@@ -43,7 +130,7 @@
         font-weight: 700;
         font-size: 36px;
         color: #FFFFFF;
-        padding: 220px 0 80px 0;
+        padding: 120px 0 80px 0;
       }
 
       &--group {
@@ -264,13 +351,7 @@
     }
   }
 
-  summary {
-    display: block;
-  }
 
-  summary::-webkit-details-marker {
-    display: none;
-  }
 
   .p-section-faq__item:nth-of-type(n+2) {
     margin-top: 32px;

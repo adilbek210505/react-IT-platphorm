@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import fon from "../image/Packet-fon.png"
 import {NavLink} from "react-router-dom";
 import {BsCheck2} from "react-icons/bs";

@@ -63,8 +63,7 @@
       &--group {
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
-
+        justify-content: center;
 
         a {
           text-decoration: none;
@@ -429,11 +428,13 @@
     .container {
       .title--group {
         justify-content: center;
+        flex-wrap: wrap;
       }
 
       .packet--group {
         justify-content: center;
       }
+
     }
   }
 }

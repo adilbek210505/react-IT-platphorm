@@ -46,6 +46,7 @@ function App() {
                     <Route path={'/afterMaster'} element={<AfterMaster/>}/>
                     <Route path={'/afterCourses'} element={<AfterCourses/>}/>
                     <Route path={'/notice'} element={<Notice/>}/>
+
                 </Routes>
 
             </div>

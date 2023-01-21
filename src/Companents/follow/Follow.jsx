@@ -14,6 +14,7 @@ const Follow = () => {
         <div id="follows"><p><span>
         <NavLink to={'/'}>Главная</NavLink></span><span>/ Оформить подписку</span></p>
             <div className="container">
+
                 <div className="follows"><h1>Год</h1>
                     <div className="follows--input">
                         <form>
@@ -46,6 +47,44 @@ const Follow = () => {
                             <div className="follows--pay__visa--block">
                                 <input type="radio" className="follows--pay__visa--block__line"/>
                                 <h5>Visa</h5></div>
+
+                <div className="hero">
+                    <h1>Год</h1>
+                    <form>
+                        <fieldset>
+                            <input type="text"/>
+                            <legend> Ф.И.О*</legend>
+                        </fieldset>
+                    </form>
+                    <form>
+                        <fieldset>
+                            <legend>
+                                Телефон*
+                            </legend>
+                            <input type="tel" placeholder="+996"/>
+                        </fieldset>
+                    </form>
+                    <form>
+                        <fieldset>
+                            <input type="text"/>
+                            <legend> E mail*
+                            </legend>
+                        </fieldset>
+                    </form>
+                    <form>
+                        <fieldset>
+                            <input type="password"/>
+                            <legend> Пароль*</legend>
+
+                        </fieldset>
+                    </form>
+                    <h4>Выберите платежную карту</h4>
+                    <div className="hero--pay">
+                        <div className="hero--pay__visa">
+                            <div className="hero--pay__visa--block">
+                                <input type="radio" className="hero--pay__visa--block__line"/><h4>Visa</h4>
+                            </div>
+
                         </div>
                         <div className="follows--pay__card">
                             <div className="follows--pay__card--block"><input type="radio"
