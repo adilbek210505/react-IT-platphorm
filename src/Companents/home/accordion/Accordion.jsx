@@ -5,10 +5,10 @@ const Accordion = ({title , active , setActive}) => {
     return (
         <div className='container'>
             <div className="accordion" style={{margin: '10px 0 30px 0'}}>
-                <div className="accordionHeading" style={{display : 'flex'}}>
+                <div className="accordionHeading" style={{display : 'flex', alignItems:"center",justifyContent:"space-between"}}>
                     <p>{title}</p>
                     <span onClick={() => setActive(title)}>
-                        {active === title ? <AiOutlineUp/>: <AiOutlineDown/>}
+                        {active === title ? <AiOutlineUp className="icon"/>: <AiOutlineDown className="icon"/>}
                     </span>
                 </div>
                 <div className={(active === title ? 'show' : '') + 'accordionContent'} >

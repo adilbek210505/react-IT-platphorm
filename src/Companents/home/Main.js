@@ -4,6 +4,11 @@ import java from "../image/main--photo--java.png"
 import {FaRegAddressBook} from "react-icons/fa";
 import what from "../image/main--photo--what.png"
 import main from "../image/main-photo--all.png"
+import mans from "../image/mens--main.svg"
+import icon1 from "../image/main--icon1.png"
+import icon2 from "../image/main--icon2.png"
+import icon3 from "../image/main--icon3.png"
+import icon4 from "../image/main--icon4.png"
 import {NavLink, useNavigate} from "react-router-dom";
 import {PageContext} from "../../context";
 import {useForm} from 'react-hook-form'
@@ -35,7 +40,7 @@ const Main = () => {
                             адаптации в IT-сфере.</p>
                     </div>
                     <div className="main--right">
-                        <img className="main--right--image" src={photo} alt=""/>
+                        <img src={photo} alt=""/>
                     </div>
                 </div>
                 <div className="articles">
@@ -178,7 +183,6 @@ const Main = () => {
                 </div>
             </div>
         </section>
-
     );
 };
 
