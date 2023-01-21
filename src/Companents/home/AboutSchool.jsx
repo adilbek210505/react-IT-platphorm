@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {NavLink, useNavigate} from "react-router-dom";
 import {PageContext} from "../../context";
+import {useForm} from "react-hook-form";
 const AboutSchool = () => {
     const {page} = useContext(PageContext)
     const navigate = useNavigate()
@@ -47,7 +48,18 @@ const AboutSchool = () => {
             }
         ]
     };
-
+    const {
+        register,
+        formState :{
+            errors,
+            isValid
+        },
+        handleSubmit,
+        reset,
+    } = useForm({mode: "onBlur"})
+    const onSubmit = (data)=>{
+        alert(JSON.stringify(data))
+        reset()}
     return (
         <section id="school">
             <div className="container">
@@ -212,16 +224,38 @@ const AboutSchool = () => {
                         <p>Заполните краткий бриф с ключевым вопросами, <br/> и мы подготовимся к разговору с вами </p>
                     </div>
                     <div className="service--right">
-                        <form className="service--right__form">
-                        <h1>ФИО*</h1>
-                            <input type="text"/>
-                        <h1>Номер телефон*</h1>
-                        <input type="text"/>
-                        <h1>Email*</h1>
-                        <input type="text"/>
-                        <button>Отправить</button>
-                        </form>
+                        {/*<form className="service--right__form">*/}
+                        {/*<h1>ФИО*</h1>*/}
+                        {/*    <input type="text"/>*/}
+                        {/*<h1>Номер телефон*</h1>*/}
+                        {/*<input type="text"/>*/}
+                        {/*<h1>Email*</h1>*/}
+                        {/*<input type="text"/>*/}
+                        {/*<button>Отправить</button>*/}
+                        {/*</form>*/}
+                        <form onSubmit={handleSubmit(onSubmit)} className="service--right__form">
+                            <h1>ФИО*</h1>
+                            <input {...register('firstName', {
+                                required: 'поле обьзательна к заполнению',
+                            })} type="text"/>
+                            <div>{errors ?.firstName && <p style={{color: "red"}}>{errors?.firstName?.message || 'ERROR!'}</p>}</div>
 
+
+                            <h1>Номер телефон*</h1>
+                            <input {...register('phoneNumber', {
+                                required: 'поле обьзательна к заполнению',
+                                pattern: /\d+/g,
+                            })} type="text"/>
+                            <div>{errors?.phoneNumber && <p style={{color: 'red'}}>{errors?.phoneNumber?.message || 'Только цифры!'}</p>}</div>
+
+                            <h1>Email*</h1>
+                            <input {...register('eMail', {
+                                required:  'поле обьзательна к заполнению',
+                                pattern: /[A-Za-z]{3}/
+                            })} type="email"/>
+                            <div>{errors?.eMail && <p style={{color: 'red'}}>{errors?.eMail?.message || 'ERROR!'}</p>}</div>
+                            <button disabled={!isValid}>Отправить</button>
+                        </form>
                     </div>
                 </div>
             </div>
