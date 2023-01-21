@@ -11,6 +11,7 @@ import victor from '../image/aboutus.victor.svg'
 import alina from '../image/aboutus.alina.svg'
 import erlan from '../image/aboutus.erlan.svg'
 import {NavLink} from "react-router-dom";
+import {useForm} from "react-hook-form";
 
 const AboutUs = () => {
     var settings = {
@@ -47,6 +48,18 @@ const AboutUs = () => {
             }
         ]
     };
+    const {
+        register,
+        formState :{
+            errors,
+            isValid
+        },
+        handleSubmit,
+        reset,
+    } = useForm({mode: "onBlur"})
+    const onSubmit = (data)=>{
+        alert(JSON.stringify(data))
+        reset()}
     return (
         <div id="page">
             <div className="container">
@@ -117,24 +130,36 @@ const AboutUs = () => {
                             <p className='group--request__text'>Заполните краткую форму с ключевым <br/> вопросами, и мы
                                 подготовимся к разговору <br/> с  вами </p>
                         </div>
-                        <form>
+                        <form  onSubmit={handleSubmit(onSubmit)}>
                         <div className='group--leave'>
                             <div className='group--leave__inputs'>
                                 <h3 className="group--leave__inputs--surname">ФИО *</h3>
-                                <input className="group--leave__inputs--bl" type="text"/>
+                                <input {...register('firstName', {
+                                    required: 'поле обьзательна к заполнению',
+                                })}
+                                       className="group--leave__inputs--bl" type="text"/>
+                                <div>{errors ?.firstName && <p style={{color: "red"}}>{errors?.firstName?.message || 'ERROR!'}</p>}</div>
                             </div>
                             <div className='group--leave__inputs'>
                                 <h3 className="group--leave__inputs--surname">Номер телефон*</h3>
-                                <input className="group--leave__inputs--bl" type="text"/>
+                                <input {...register('phoneNumber', {
+                                    required: 'поле обьзательна к заполнению',
+                                    pattern: /\d+/g,
+                                })} className="group--leave__inputs--bl" type="text"/>
+                                <div>{errors?.phoneNumber && <p style={{color: 'red'}}>{errors?.phoneNumber?.message || 'Только цифры!'}</p>}</div>
                             </div>
                             <div className='group--leave__inputs'>
                                 <h3 className="group--leave__inputs--surname">Email*</h3>
-                                <input className="group--leave__inputs--bl" type="text"/>
+                                <input {...register('eMail', {
+                                    required:  'поле обьзательна к заполнению',
+                                    pattern: /[A-Za-z]{3}/
+                                })}  className="group--leave__inputs--bl" type="text"/>
+                                <div>{errors?.eMail && <p style={{color: 'red'}}>{errors?.eMail?.message || 'ERROR!'}</p>}</div>
                             </div>
 
 
                            <div className='group--send'>
-                               <button className='group--send__btn'>Отправить</button>
+                               <button disabled={!isValid} className='group--send__btn'>Отправить</button>
                            </div>
                         </div>
                         </form>

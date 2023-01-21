@@ -1,3 +1,12 @@
+.show{
+  height: 180px;
+  opacity : 1;
+}
+.accordionContent{
+  height: 0;
+  opacity: 0;
+  transition: all 600ms ease-in-out;
+}
 #Mein {
   padding: 100px 0 0 0;
 
@@ -342,13 +351,7 @@
     }
   }
 
-  summary {
-    display: block;
-  }
 
-  summary::-webkit-details-marker {
-    display: none;
-  }
 
   .p-section-faq__item:nth-of-type(n+2) {
     margin-top: 32px;
