@@ -17,26 +17,34 @@ const Follow = () => {
             <div className="container">
                 <div className="hero">
                     <h1>Год</h1>
-                    <fieldset>
-                        <input type="text"/>
-                        <legend> Ф.И.О*</legend>
-                    </fieldset>
-                    <fieldset>
-                        <legend>
-                            Телефон*
-                        </legend>
-                        <input type="tel" placeholder="+996"/>
-                    </fieldset>
-                    <fieldset>
-                        <input type="text"/>
-                        <legend> E mail*
-                        </legend>
-                    </fieldset>
-                    <fieldset>
-                        <input type="password"/>
-                        <legend> Пароль*</legend>
+                    <form>
+                        <fieldset>
+                            <input type="text"/>
+                            <legend> Ф.И.О*</legend>
+                        </fieldset>
+                    </form>
+                    <form>
+                        <fieldset>
+                            <legend>
+                                Телефон*
+                            </legend>
+                            <input type="tel" placeholder="+996"/>
+                        </fieldset>
+                    </form>
+                    <form>
+                        <fieldset>
+                            <input type="text"/>
+                            <legend> E mail*
+                            </legend>
+                        </fieldset>
+                    </form>
+                    <form>
+                        <fieldset>
+                            <input type="password"/>
+                            <legend> Пароль*</legend>
 
-                    </fieldset>
+                        </fieldset>
+                    </form>
                     <h4>Выберите платежную карту</h4>
                     <div className="hero--pay">
                         <div className="hero--pay__visa">
