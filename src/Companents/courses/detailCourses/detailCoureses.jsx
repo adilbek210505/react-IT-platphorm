@@ -10,7 +10,6 @@ import Slider from "react-slick";
 import sliderImg from "../../image/AboutSchool-slider--img.svg";
 import slideri from "../../image/AboutSchool-slider-three--img.svg";
 import sliderImage from "../../image/AboutSchool-slider-two--img.svg";
-import {IoIosArrowDown} from "react-icons/io";
 
 const DetailCoureses = () => {
 
@@ -63,7 +62,7 @@ const DetailCoureses = () => {
                         <p>Идея реактивного программирования появилась сравнительно недавно, лет 10 назад. Что вызвало
                             популярность этого относительно нового подхода и почему сейчас он в тренде, рассказал на
                             конференции </p>
-                        <button>Купить курс за 46 $</button>
+                        <button onClick={()=> navigate('/courses')}>Купить курс за 46 $</button>
                     </div>
                     <div className="title--right">
                         <div className="title--right--top">
